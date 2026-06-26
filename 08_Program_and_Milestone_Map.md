@@ -1,6 +1,6 @@
 # Civilodynamics — Program and Milestone Map
 
-**Canonical Corpus, Document 8 of 8 · Living Document · Version 0.4 · Last updated: June 2026 (building phase — FCR instrument specified (Doc 9) and Stage-1 deliverable drafted (Docs 10–11))**
+**Canonical Corpus, Document 8 of 8 · Living Document · Version 0.5 · Last updated: June 2026 (building phase — FCR Stage-1 drafted (Docs 9–11); Stage C0 priority package drafted)**
 **Satchel Hamilton · Civilodynamics Initiative**
 
 > **What this document is.** A single, continuously updated map of (A) the foundational document corpus, (B) the scientific research program, and (C) the dissemination, positioning, and promotion plan — plus a risk register and a near-term action list. It exists to keep both author and collaborator oriented: what is done, what is next, what each step depends on, and what success would look like in falsifiable or checkable terms. It supersedes the informal multi-phase plan in the working notes.
@@ -115,9 +115,11 @@ What the founder personally does, at each stage, to promulgate, advance, and pro
 ### Stage C0 — Establish existence (do now; cheap; appropriate even at zero validation)
 These steps secure priority and presence **without making any predictive claim**, so they carry no overclaiming risk.
 
+> **Status (June 2026): in-repo artifacts drafted; execution is account-gated.** The web flag (`index.html`), citation metadata (`CITATION.cff`), license (`LICENSE`, CC BY 4.0 recommended), and the ready-to-paste deposit packet (`priority/DEPOSIT.md`) exist. The remaining steps — Zenodo DOI, GitHub Pages, arXiv, namespace, OSF — require accounts/payment and are checklisted in `priority/CHECKLIST.md` (Zenodo + Pages first for a same-day flag).
+
 - **Timestamp priority.** Once the Charter v2 (#1) and the revised flagship paper (#5) exist as clean documents, deposit them to **arXiv** (physics.soc-ph or q-bio.PE), **OSF**, and **Zenodo** (for a citable DOI). The existing drafts can be deposited sooner if you want the flag in the ground immediately; the canon versions supersede them. *Effect: permanent, citable, dated record of the discipline with your name on it.*
 - **Secure the namespace.** Register `civilodynamics.org`/`.com`; claim the handle across platforms; hold `r/Civilodynamics`. Low cost, real downside if neglected.
-- **Minimal web flag.** A single page: name, one-paragraph definition, link to the deposited founding document (DOI), founder name, email signup.
+- **Minimal web flag.** A single page: name, one-paragraph definition, link to the deposited founding document (DOI), founder name, email signup. `[DRAFTED — index.html; deploy via GitHub Pages, CHECKLIST step 2]`
 - **Working-paper repository.** Stand up an OSF/SSRN working-paper series so the corpus and future work have a permanent home.
 
 ### Stage C1 — Enter the conversation (as the first canon outputs land)
@@ -170,7 +172,7 @@ These are *possibilities and targets*, not projections or guarantees, and they a
 Reflecting the true Phase-0 starting point, in rough priority order:
 
 1. **Canon: complete and reconciled; building phase begun.** All eight foundational documents are drafted to canon standard, and the first building-phase document (Document 9, the FCR instrument and pre-registration) is drafted. The corpus is internally reconciled (the $\Phi$/$\mathcal{E}$ adoption and the Document 9 cross-references are in place, per Track A). An optional consolidation pass — a unified read-through for cross-references and consistency, and conversion of the flagship paper (#5) and Charter (#1) to submission-grade PDF — can follow once priority is established. *The active priorities are now items 2–5.*
-2. **Establish priority and presence (Stage C0).** Deposit the founding documents for a timestamp + DOI (existing drafts now if desired; canon versions when ready); secure the namespace; put up the one-page flag. *Low cost, high value, no overclaiming risk.*
+2. **Establish priority and presence (Stage C0).** `[IN PROGRESS]` — the in-repo package is drafted (web flag, citation metadata, license, deposit packet with ready-to-paste abstracts/keywords/categories). **Next, account-gated (you):** cut a Zenodo release for a DOI and turn on GitHub Pages (same-day flag), then arXiv, namespace, and OSF — see `priority/CHECKLIST.md`. *Low cost, high value, no overclaiming risk.*
 3. **Build the ECI battery (B1).** `[IN PROGRESS]` — the instrument is specified and pre-registered (Document 9), and the Stage-1 deliverable is drafted: the anchor-core item bank (Document 10, with documented ground-truth sourcing and a directional-balance ledger) and the pre-analysis plan (Document 11). Next: adjudicate and cognitively pretest the bank, freeze it with the plan, and deposit to a registry (this aligns with Stage C0 — priority). Still the highest-priority empirical investment, and still proceeding on paper, before funding.
 4. **Identify collaborator targets.** Name 3–5 specific people and the specific idea to pitch each (Stage C1), to be approached once the flagship preprint exists.
 5. **Protect the runway.** Keep contract-engineering income stable through any near-term life transitions; CVD work proceeds alongside it.
@@ -181,4 +183,4 @@ Reflecting the true Phase-0 starting point, in rough priority order:
 
 At the end of each working session: (1) update every status marker; (2) log newly completed items with their date in the relevant track; (3) re-sequence Tracks B and C if reality has changed the dependencies or priorities; (4) record any new open problem in Document 2 §11 and reference it here; (5) bump this document's version and "last updated" date.
 
-*Living document. Version 0.4, June 2026. The map will be wrong in detail within weeks — that is expected. Its job is to keep the program honest about where it is and disciplined about what comes next.*
+*Living document. Version 0.5, June 2026. The map will be wrong in detail within weeks — that is expected. Its job is to keep the program honest about where it is and disciplined about what comes next.*
