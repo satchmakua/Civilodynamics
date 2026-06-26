@@ -1,6 +1,6 @@
 # Civilodynamics — Program and Milestone Map
 
-**Canonical Corpus, Document 8 of 8 · Living Document · Version 0.2 · Last updated: June 2026 (foundational corpus complete)**
+**Canonical Corpus, Document 8 of 8 · Living Document · Version 0.3 · Last updated: June 2026 (building phase begun — FCR instrument specified in Document 9)**
 **Satchel Hamilton · Civilodynamics Initiative**
 
 > **What this document is.** A single, continuously updated map of (A) the foundational document corpus, (B) the scientific research program, and (C) the dissemination, positioning, and promotion plan — plus a risk register and a near-term action list. It exists to keep both author and collaborator oriented: what is done, what is next, what each step depends on, and what success would look like in falsifiable or checkable terms. It supersedes the informal multi-phase plan in the working notes.
@@ -17,11 +17,12 @@ This is Phase 0. The program is at its genuine beginning, and the map reflects t
 
 **What exists today:**
 - **The complete foundational corpus — all eight canonical documents — `[DONE]` (v0.1 / v2.0 drafts).** The original draft papers have been superseded by the rationalized canon (Documents 1–8): Charter v2, Mathematical Foundations, Poliform Theory v2, Measurement Program, the revised U.S. case study, the Retrodiction Casebook, the Lexicon & Ontology, and this map. This is the program's substantive asset to date.
-- **Nothing beyond the corpus.** The canon is a coherent, falsifiable, internally consistent *skeleton*. The document phase is complete; the program now shifts from writing to building — data, computation, validation — and to establishing priority.
+- **The first building-phase artifact — Document 9 — `[DONE]` (v0.1 draft).** With the foundational corpus complete, the program has begun the build: Document 9 specifies and pre-registers the Factual Consensus Rate instrument (the highest-priority empirical investment, Charter §5), operationalizing Document 4 §5.2 into a fieldable survey and pre-analysis plan. It is the first of a building-phase document series, tracked under Track B (Phase B1), not as a ninth *foundational* document. It is a specification on paper; nothing has yet been fielded or computed.
+- **Nothing computed or fielded yet.** The canon plus the FCR specification are a coherent, falsifiable, internally consistent *skeleton plus its first build plan*. The document phase is complete; the program is now in the building phase — data, computation, validation — and still owes the establishment of priority.
 
 **What does *not* yet exist (stated plainly, so the map is honest):**
 - **No external footprint:** no priority timestamp (arXiv/OSF/Zenodo), no registered namespace, no website, no public writing, no journal submission, no institutional affiliation, no grant, no collaborator.
-- **No empirical or computational infrastructure:** no computed CSI (all values to date are illustrative estimates), no computed basin/morphospace, no ECI measurement infrastructure, no configuration database, no reference implementation.
+- **No empirical or computational infrastructure:** no computed CSI (all values to date are illustrative estimates), no computed basin/morphospace, no *fielded* ECI measurement infrastructure (the FCR instrument is specified and pre-registered in Document 9 but not yet fielded), no configuration database, no reference implementation.
 - **No validation:** no retrodiction has been computed or scored; no prospective prediction is yet registered under corrected methodology.
 
 **One-line summary:** *The asset is the ideas and the rigor. Everything else — priority, evidence, audience, institutions, income — is to be built, and the order in which it is built matters.*
@@ -48,7 +49,7 @@ The internal documents we are building together. Build order: **2 → 1 → 4 �
 | 7 | Lexicon & Ontology | `[DONE]` v0.1 | 1–6 | Controlled vocabulary, notation table, concept ontology, status tags, and deprecated-usage register; resolved two further symbol collisions. ✔ |
 | 8 | Program & Milestone Map (this document) | `[IN PROGRESS]` (living) | all | Maintained continuously; never "done." |
 
-**Immediate corpus task:** None — the foundational corpus is complete (all eight documents drafted to canon standard). The program now advances on **Track B** (begin Phase B1) and **Track C** (Stage C0, priority establishment). One small internal reconciliation remains: adopt the $\Phi$ (reflexivity coupling) and $\mathcal{E}$ (epistemic layer) symbols in Document 2's reflexivity model, per the collisions resolved in Document 7 §2.
+**Immediate corpus task:** None — the foundational corpus is complete (all eight documents drafted to canon standard) and internally reconciled. The $\Phi$/$\mathcal{E}$ symbol adoption flagged in earlier versions is in place (Document 2 §8.1, §11.10; Document 7 §2), and the reconciliations created by Document 9 (FCR notation and terms into Document 7; cross-references in Documents 2, 4, 5) are applied. The program now advances on **Track B** (Phase B1 — the building-phase documents begin with Document 9) and **Track C** (Stage C0, priority establishment). Building-phase artifacts are tracked under Track B below, not appended to the foundational eight.
 
 ---
 
@@ -60,6 +61,7 @@ Research milestones tied to the corrected core. Each phase lists its objective, 
 *Objective:* turn the framework from a skeleton into something that touches data; produce the first *computed* (not estimated) quantities.
 
 - Build the ECI measurement infrastructure: standing factual-consensus battery + survey, MOS and NCI pipelines, best feasible backward reconstruction. **[§11.5 — highest-priority empirical investment.]**
+  - **FCR instrument: specified and pre-registered `[DONE]` (Document 9).** The fieldable survey, incentivized-accuracy design, item-bank rules, ground-truth adjudication, and pre-analysis plan are fixed. Remaining build, per Document 9 §11: **Stage 1** `[NOT STARTED]` — freeze the pre-analysis plan and draft the anchor-core item bank (paper stage, feasible now, no funding); **Stage 2** — pilot wave; **Stage 3** — standing quarterly tracker → first *computed* FCR series; **Stage 4** — integrate with MOS/NCI into the ECI and the modern-era $\sigma_{\mathrm{epi}}$. Fielding it (Stage 3) is what makes Document 5 Prediction 2 live.
 - Assemble a Seshat-compatible configuration database with full six-axis coverage, prioritizing the under-served information ($I$) and trust ($T$) axes. **[§11.6]**
 - Compute $\Omega$-coordinates for the sample; estimate $\hat V = -\log\hat\rho$ → basin centers and relative depths (Tier 1). **[§11.6]**
 - Implement corrected CSI thresholds ($\chi^2_p$ / Hotelling-$F$) and the per-dimension-normalized headline scalar; compute the U.S. CSI end-to-end on the coverage-restricted vector. **[§11.2, §11.3]**
@@ -167,9 +169,9 @@ These are *possibilities and targets*, not projections or guarantees, and they a
 
 Reflecting the true Phase-0 starting point, in rough priority order:
 
-1. **Canon: complete.** All eight documents are drafted to canon standard. The only remaining corpus task is the one-line reconciliation noted in Track A (adopt $\Phi$ / $\mathcal{E}$ in Document 2 §8.1). An optional consolidation pass — a unified read-through for cross-references and consistency, and conversion of the flagship paper (#5) and Charter (#1) to submission-grade PDF — can follow once priority is established. *The active priorities are now items 2–5.*
+1. **Canon: complete and reconciled; building phase begun.** All eight foundational documents are drafted to canon standard, and the first building-phase document (Document 9, the FCR instrument and pre-registration) is drafted. The corpus is internally reconciled (the $\Phi$/$\mathcal{E}$ adoption and the Document 9 cross-references are in place, per Track A). An optional consolidation pass — a unified read-through for cross-references and consistency, and conversion of the flagship paper (#5) and Charter (#1) to submission-grade PDF — can follow once priority is established. *The active priorities are now items 2–5.*
 2. **Establish priority and presence (Stage C0).** Deposit the founding documents for a timestamp + DOI (existing drafts now if desired; canon versions when ready); secure the namespace; put up the one-page flag. *Low cost, high value, no overclaiming risk.*
-3. **Scope the ECI battery (B1 seed).** Begin drafting the standing factual-consensus question battery and survey design — the highest-priority empirical investment and one that can start on paper before funding.
+3. **Build the ECI battery (B1).** `[IN PROGRESS]` — the instrument is specified and pre-registered (Document 9). Next is the Stage-1 deliverable: freeze the pre-analysis plan and draft the anchor-core item bank with documented ground-truth sourcing and directional balance — the highest-priority empirical investment and one that proceeds on paper, before funding.
 4. **Identify collaborator targets.** Name 3–5 specific people and the specific idea to pitch each (Stage C1), to be approached once the flagship preprint exists.
 5. **Protect the runway.** Keep contract-engineering income stable through any near-term life transitions; CVD work proceeds alongside it.
 
@@ -179,4 +181,4 @@ Reflecting the true Phase-0 starting point, in rough priority order:
 
 At the end of each working session: (1) update every status marker; (2) log newly completed items with their date in the relevant track; (3) re-sequence Tracks B and C if reality has changed the dependencies or priorities; (4) record any new open problem in Document 2 §11 and reference it here; (5) bump this document's version and "last updated" date.
 
-*Living document. Version 0.2, June 2026. The map will be wrong in detail within weeks — that is expected. Its job is to keep the program honest about where it is and disciplined about what comes next.*
+*Living document. Version 0.3, June 2026. The map will be wrong in detail within weeks — that is expected. Its job is to keep the program honest about where it is and disciplined about what comes next.*

@@ -159,7 +159,7 @@ $\textit{MOS}(t) = 1 - \mathrm{JSD}(P_A, P_B)$, the Jensen–Shannon divergence 
 
 ### 5.2 Factual Consensus Rate (FCR) — the new instrument
 
-No existing survey tracks cross-partisan agreement on *verifiable* propositions consistently over time. Building one is the single most valuable, and most feasible, near-term metrological investment in the program. Specification:
+No existing survey tracks cross-partisan agreement on *verifiable* propositions consistently over time. Building one is the single most valuable, and most feasible, near-term metrological investment in the program. The conceptual specification below is operationalized into a full fieldable instrument and pre-registration in **Document 9**. Specification:
 
 **Object.** The fraction of a standing battery of verifiable factual propositions on which agreement holds across partisan (and other) subgroups — operationally, the share of items for which the cross-group gap in the rate of correct belief falls below a pre-registered threshold (and/or a continuous index of the mean cross-group gap).
 
@@ -225,7 +225,7 @@ The two priority gaps — the information ($I$) and trust ($T$) axes in deep his
 
 Consolidated for the milestone tracker (Document 8).
 
-1. **FCR survey instrument** (§5.2) — highest priority; fully under program control; feasible at modest cost; can begin on paper now.
+1. **FCR survey instrument** (§5.2) — highest priority; fully under program control; feasible at modest cost; can begin on paper now. **Specified and pre-registered in Document 9.**
 2. **MOS pipeline** (§5.1) from existing sources, with documented historical reconstruction.
 3. **Configuration database** with full six-axis coverage (§7), prioritizing the under-served $I$ and $T$ axes; computes $\Omega$-coordinates and tests the morphospace occupancy prediction (Tier 1).
 4. **Longitudinal trajectories** for the retrodiction cases (Document 6) to enable Tier-2 dynamics.

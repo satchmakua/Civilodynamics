@@ -135,7 +135,7 @@ A note on reflexivity (Document 2 §8.1): publishing these predictions may influ
 
 **Estimated, not computed.** The principal limitation is the one stated throughout: the CSI here is illustrative. Converting it to a computed result requires Document 4's pipeline — the coverage-restricted baseline, the corrected χ²/Hotelling thresholds, the per-dimension-normalized headline, and uncertainty propagation. Until then, this paper is a structured argument with indicative magnitudes, not a measurement.
 
-**Epistemic-layer measurement.** The ECI is the weakest block: one component is reconstructed/estimated before ~2012, the other has no instrument yet. Predictions 2 is conditional on building it. This is the program's highest-priority empirical investment (Document 4 §5).
+**Epistemic-layer measurement.** The ECI is the weakest block: one component is reconstructed/estimated before ~2012, the other has no instrument yet. Prediction 2 is conditional on building it — and the instrument it requires (the FCR) is now specified and pre-registered in **Document 9**, so fielding it is what makes Prediction 2 live. This is the program's highest-priority empirical investment (Document 4 §5).
 
 **Baseline sensitivity.** All z-scores depend on the 1948–1973 baseline. Sensitivity analyses against 1948–1968 and 1950–1980 baselines are required; the original reported these as broadly shape-preserving but level-shifting by ~15–25%, indicating the trajectory is robust to the choice while specific thresholds are not.
 
@@ -157,6 +157,6 @@ The paper is careful about what it has and has not shown. The CSI values are ill
 
 American Bar Association (2023); Bishop, B. (2008); Bureau of Labor Statistics (2024, CES and OEWS); Chen, J., & Rodden, J. (2013); Chetty, R., Hendren, N., Kline, P., & Saez, E. (2014); Congressional Budget Office (2024); Dell, F., Piketty, T., & Saez, E. (2007); Evans, R. J. (2003); Federal Reserve Board (2024, DFA); Fritzsche, P. (1998); Gallup Organization (2023); International Monetary Fund (2023, HPDD); Iyengar, S., Lelkes, Y., Levendusky, M., Malhotra, N., & Westwood, S. J. (2019); James, H. (1986); Kahan, D. M. (2017); Kershaw, I. (1998); MIT Election Data and Science Lab (2023); Mishel, L., Gould, E., & Bivens, J. (2015); National Center for Education Statistics (2022); Norris, P., & Inglehart, R. (2019); Pennycook, G., & Rand, D. G. (2019); Peukert, D. J. K. (1989); Pew Research Center (2022, 2023); Piketty, T. (2014); Putnam, R. D. (2000); Reuters Institute (2023); Saez, E., & Zucman, G. (2020); Turchin, P. (2003, 2016); Turchin, P., & Nefedov, S. A. (2009); World Inequality Database (2024).
 
-*Bullock, J. G., et al. (on partisan expressive responding and incentivized-accuracy designs) to be added in support of the ECI methodology (Document 4 §5).*
+*Bullock, J. G., et al. (2015) and Prior, M., et al. (2015), on partisan expressive responding and incentivized-accuracy designs, are cited in support of the ECI/FCR methodology in **Document 9** (the FCR instrument specification and pre-registration).*
 
 *Working paper, revised. Cite with caution. All CSI values are illustrative pending computation; all component statistics should be verified against current provider data before submission. Framework: Documents 1, 2, 4. Validation: Document 6.*

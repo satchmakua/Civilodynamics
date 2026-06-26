@@ -43,6 +43,14 @@ Canonical from Document 2; reproduced here as the authoritative reference.
 | $O(t)$ | Object layer (reflexivity) | Actual social dynamics. |
 | $\mathcal{E}(t)$ | **Epistemic/belief layer (reflexivity)** | Beliefs about the dynamics. **Script-E; see collision note.** |
 | $\Phi(O,\mathcal{E})$ | **Reflexivity coupling** | **Newly assigned symbol; see collision note.** |
+| $c_{g,k}$ | Per-item, per-group correct-belief rate | FCR instrument; group $g$, item $k$. *(Doc 9 §2.)* |
+| $\Delta_k$ | Cross-group gap on item $k$ | $\lvert c_{A,k}-c_{B,k}\rvert$; max pairwise for >2 groups. *(Doc 9 §2.)* |
+| $\theta$ | Consensus threshold | Gap below which an item counts as agreed. *(Doc 9 §2, §8.)* |
+| $\textit{FCR}_\theta,\ \textit{FCR}_c$ | The two FCR statistics | Consensus-share (threshold) and mean-gap (continuous); $\textit{FCR}_c$ primary. *(Doc 9 §2.)* |
+| $\mathcal{A}\ (=\mathcal{K})$ | Anchor core | Fixed item set held constant for longitudinal comparability. *(Doc 9 §3.2.)* |
+| $\textit{XP}$ | Expressive component | $\textit{FCR}_c^{a}-\textit{FCR}_c^{b}$; consensus recovered by accuracy incentives. *(Doc 9 §4.)* |
+| $\textit{ACC}$ | Knowledge level | Mean cross-group correct rate; companion to FCR, never folded in. *(Doc 9 §5.2.)* |
+| $(\cdot)^{b},\ (\cdot)^{a}$ | Response-arm superscripts | Belief (standard) arm; accuracy-incentivized arm. *(Doc 9 §4.)* |
 
 > **Resolved symbol collisions (new in this document).** Two collisions in the reflexivity model of Document 2 §8.1 are resolved here, and Document 2 will be reconciled to match:
 > 1. The reflexivity **coupling term** was written $R(O,\mathcal{E})$, but $R$ already denotes the **rotational component** of the dynamics ($\mathbf{F}=-\nabla V + R$). The coupling is reassigned the symbol **$\Phi$**; $R$ is reserved for the rotational component.
@@ -112,7 +120,11 @@ Grouped by domain. Format: **term** — definition — *(symbol; units if any; c
 - **Per-dimension-normalized headline** — the recommended reported scalar ($\textit{CSI}_{\mathrm{M}}/\sqrt{p}$ or mean $z$), interpretable across differing $p$. *(Doc 2 §4.5.)*
 - **Epistemic Coherence Index (ECI)** — composite measuring shared factual/information commons; the discipline's distinctive and least-mature measure. *(Doc 2 §5, Doc 4 §5.)*
   - **Media Overlap Score (MOS)** — $1-\mathrm{JSD}$ of two communities' source distributions. *(Doc 4 §5.1.)*
-  - **Factual Consensus Rate (FCR)** — cross-group agreement on a verifiable battery; requires a new survey instrument. *(Doc 4 §5.2.)*
+  - **Factual Consensus Rate (FCR)** — cross-group agreement on a verifiable battery; the share of items whose cross-group gap is below threshold ($\textit{FCR}_\theta$) and/or one minus the mean gap ($\textit{FCR}_c$, primary). *(Doc 4 §5.2; full instrument and pre-registration Doc 9.)*
+    - **Anchor core / rotating pool** — the fixed item set held constant for longitudinal comparability vs. the per-wave refreshed set guarding against priming and coaching. *(Doc 9 §3.2.)*
+    - **Directional balance** — the requirement that correct answers, as a set, favor no partition; the FCR's structural even-handedness safeguard. *(Doc 9 §3.3.)*
+    - **Ground-truth adjudication** — the pre-registered sourcing hierarchy and multi-perspective panel that admit only settled, documentable items. *(Doc 9 §3.4.)*
+    - **Incentivized-accuracy arm / expressive component ($\textit{XP}$)** — the accuracy-paid arm isolating believed from performed divergence, and the consensus it recovers. *(Doc 9 §4.)*
   - **Network Connectivity Index (NCI)** — share of cross-community ties in information networks. *(Doc 4 §5.3.)*
 - **Elite Overproduction Index (EOI)** — ratio of credentialed elite aspirants to elite positions, aggregated across domains; feeds $\sigma_{\mathrm{elite}}$. *(Doc 4 §6.)*
 - **Baseline** — a society-specific, explicitly defended reference interval defining "normal"; never universal. *( $\mathcal{B}$; Doc 2 §0, Doc 4 §4.)*
@@ -196,7 +208,7 @@ A quick-reference register of usages retired across the corpus, with the correct
 
 ## 7. Closing
 
-A discipline that coins terms must govern them, and one that has corrected errors must record the corrections so they do not return. This lexicon is the single source of truth for what the words and symbols of Civilodynamics mean, how the concepts relate as a type system, and which usages have been retired. It is a living standard: as the empirical and computational program proceeds (Documents 4, 6, 8), terms will be added and refined here first, and the rest of the corpus reconciled to match. The immediate reconciliation task created by this document is the adoption of $\Phi$ and $\mathcal{E}$ in the reflexivity model of Document 2.
+A discipline that coins terms must govern them, and one that has corrected errors must record the corrections so they do not return. This lexicon is the single source of truth for what the words and symbols of Civilodynamics mean, how the concepts relate as a type system, and which usages have been retired. It is a living standard: as the empirical and computational program proceeds (Documents 4, 6, 8, 9), terms will be added and refined here first, and the rest of the corpus reconciled to match. The $\Phi$/$\mathcal{E}$ adoption noted in earlier versions is now reflected in Document 2 §8.1 and §11.10; this version incorporates the FCR-instrument notation and terms introduced by Document 9 (§2, §4.3). The standing next task is to add configuration-database and reference-implementation vocabulary as those building-phase artifacts take shape.
 
 ---
 
