@@ -27,9 +27,9 @@ Ordered for fastest priority-flag first.
 - [ ] Verify the page loads and the GitHub links resolve.
 - [ ] (After step 4) point the custom domain at Pages and add a `CNAME` file.
 
-## 3. arXiv deposit (Charter #1, Flagship #5)  ⟶  *after a PDF pass*
-- [ ] Decide: deposit existing drafts now, or convert #1 and #5 to submission-grade PDF first
-      (Document 8 §E). The assistant can do the PDF conversion on request.
+## 3. arXiv deposit (Charter #1, Flagship #5)  ⟶  *files ready*
+- [x] Submission files generated in [`arxiv/`](arxiv/): `.pdf` (verified, 10 + 11 pp) and
+      `.tex` (arXiv-preferred source; compile-test first). See [`arxiv/README.md`](arxiv/README.md).
 - [ ] Create an [arXiv](https://arxiv.org) account; you may need an **endorsement** for
       `physics.soc-ph` on a first submission (request via the arXiv endorsement flow).
 - [ ] Submit with categories from `DEPOSIT.md` §1 (primary `physics.soc-ph`, cross-list
