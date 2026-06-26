@@ -258,7 +258,7 @@ Published as a **candidate field standard** (Document 4 §5.4) so that others ca
 
 Slotting into Document 8 Track B1 and Document 2 §11.5. Four stages, with a "done" definition each.
 
-1. **Instrument development & pre-registration — paper stage, feasible now, no funding.** Draft the item bank; convene the adjudication panel; cognitively pretest; freeze the pre-analysis plan (this document is its skeleton). *Done:* a frozen instrument v1.0 and a registered pre-analysis plan.
+1. **Instrument development & pre-registration — paper stage, feasible now, no funding.** Draft the item bank; convene the adjudication panel; cognitively pretest; freeze the pre-analysis plan (this document is its skeleton). The Stage-1 drafts are **Document 10** (anchor-core item bank) and **Document 11** (pre-analysis plan), with freeze pending panel sign-off and pretest. *Done:* a frozen instrument v1.0 and a registered pre-analysis plan.
 2. **Pilot wave.** A single cross-section ($n \approx 1{,}500$, including the incentivized split) to validate item performance, comprehension, directional balance, the anchor noise floor, and the expressive component; refine and re-freeze the anchor core; run the power analysis that fixes §6.2. *Done:* a validated anchor core and confirmed sampling parameters.
 3. **Standing quarterly tracker.** Field the rolling tracker; produce the first **computed** FCR series. *Done:* a published, reproducible FCR time series with bands.
 4. **Integration.** Combine with the MOS pipeline (Document 4 §5.1) and NCI (§5.3) into the ECI; supply the baseline-normalized $\sigma_{\mathrm{epi}}$ to the CSI as a modern-era extension (§7). *Done:* a computed ECI feeding a computed epistemic stress block.

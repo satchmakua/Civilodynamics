@@ -155,6 +155,13 @@ Grouped by domain. Format: **term** — definition — *(symbol; units if any; c
 - **Negative control** — a high-stress non-transition (or stable) case used to test the framework's *specificity*; what makes retrodiction falsifiable. *(Doc 6 §4.)*
 - **Two-sided scoring** — requiring both sensitivity (flagging transitions) and specificity (not flagging controls). *(Doc 6 §5.)*
 - **Pre-registration** — fixing cases, criteria, weights, and thresholds before computation, to prevent post-hoc fitting. *(Doc 2 §11.4, Doc 6.)*
+- **Pre-analysis plan (PAP)** — a registry-grade, frozen-before-fielding statement of constructs, decision rules, power, and confirmatory hypotheses for a forward instrument; pre-registration applied to data not yet collected. *(Doc 11.)*
+- **Confirmatory vs. exploratory** — the pre-registered, falsifier-bearing hypotheses (corrected for multiplicity) versus all other, clearly-labeled secondary analysis. *(Doc 11 §7.)*
+- **Anchor noise floor** — the mean cross-group gap on neutral-anchor items; the measurement-noise baseline against which "real" charged-item divergence is judged. *(Doc 9 §3.1; Doc 10 §3; Doc 11 §7.)*
+- **Cut code (R/L/S/X)** — the directional-balance tag on a charged item: which prior its correct answer cuts against (right / left / swing-incumbent / cross-partisan). *(Doc 10 §2, §5.)*
+- **Directional-balance ledger** — the audit ensuring correct answers favor no partition, run per bank and per wave. *(Doc 9 §3.3; Doc 10 §5.)*
+- **Dead-band** — the small change band within which a live-series directional item is coded "about the same," preventing within-revision noise from forcing a direction. *(Doc 10 §7; Doc 11 §6.)*
+- **Dark subset / Goodhart tripwire** — rotating items held back longer to detect coaching/gaming of the published instrument. *(Doc 9 §9; Doc 10 §9.)*
 - **Rigor leads reach** — the dissemination principle: establish priority cheaply now; defer promotion of predictive claims until measurement is real. *(Doc 1 §8, Doc 8.)*
 
 ### 4.6 Lineage and positioning
