@@ -123,7 +123,10 @@ Grouped by domain. Format: **term** — definition — *(symbol; units if any; c
   - **Factual Consensus Rate (FCR)** — cross-group agreement on a verifiable battery; the share of items whose cross-group gap is below threshold ($\textit{FCR}_\theta$) and/or one minus the mean gap ($\textit{FCR}_c$, primary). *(Doc 4 §5.2; full instrument and pre-registration Doc 9.)*
     - **Anchor core / rotating pool** — the fixed item set held constant for longitudinal comparability vs. the per-wave refreshed set guarding against priming and coaching. *(Doc 9 §3.2.)*
     - **Directional balance** — the requirement that correct answers, as a set, favor no partition; the FCR's structural even-handedness safeguard. *(Doc 9 §3.3.)*
-    - **Ground-truth adjudication** — the pre-registered sourcing hierarchy and multi-perspective panel that admit only settled, documentable items. *(Doc 9 §3.4.)*
+    - **Ground-truth adjudication** — the pre-registered sourcing hierarchy and multi-perspective panel that admit only settled, documentable items. *(Doc 9 §3.4; procedures Doc 12 §2.)*
+    - **Adjudication panel** — the cross-perspective body whose unanimity *on settledness* admits an item; the safeguard against the instrument-builder deciding what is a fact. *(Doc 12 §2.)*
+    - **Cognitive pretest (think-aloud)** — interviews verifying respondents read an item as intended and answer on belief, not cue, before freeze. *(Doc 9 §3.5; Doc 12 §3.)*
+    - **Freeze gate** — passing both adjudication and pretest, hashing instrument v1.1, and registering the pre-analysis plan. *(Doc 12 §4.)*
     - **Incentivized-accuracy arm / expressive component ($\textit{XP}$)** — the accuracy-paid arm isolating believed from performed divergence, and the consensus it recovers. *(Doc 9 §4.)*
   - **Network Connectivity Index (NCI)** — share of cross-community ties in information networks. *(Doc 4 §5.3.)*
 - **Elite Overproduction Index (EOI)** — ratio of credentialed elite aspirants to elite positions, aggregated across domains; feeds $\sigma_{\mathrm{elite}}$. *(Doc 4 §6.)*

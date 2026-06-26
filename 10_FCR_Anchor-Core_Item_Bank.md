@@ -187,7 +187,7 @@ Each item is stored with: `id`, `domain`, `class` (anchor / charged), `format` (
 
 ## 10. Adjudication and pretest checklist (the path to freeze)
 
-Before the bank is frozen for fielding (Document 9 §11 stage 1 → stage 2):
+Before the bank is frozen for fielding (Document 9 §11 stage 1 → stage 2) — full procedures and templates in **Document 12**:
 
 - [ ] Panel confirms each item's ground truth is settled and documentable; resolves every `[PANEL]` flag; excludes any item it cannot agree is settled.
 - [ ] Panel signs off on the directional-balance ledger (§5) and the dead-band (§7).
