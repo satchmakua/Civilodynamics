@@ -4,6 +4,9 @@
 
 Satchel Hamilton · Civilodynamics Initiative · founding research program
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20917966.svg)](https://doi.org/10.5281/zenodo.20917966)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](LICENSE)
+
 ---
 
 ## What this is
@@ -46,7 +49,7 @@ New here? Read the [Charter](01_Foundational_Charter.md) for the why, then the [
 
 ## Citing
 
-See [`CITATION.cff`](CITATION.cff). A citable, timestamped version with a DOI is archived on Zenodo *(DOI added once deposited)*.
+See [`CITATION.cff`](CITATION.cff). A citable, timestamped version is archived on Zenodo: [10.5281/zenodo.20917966](https://doi.org/10.5281/zenodo.20917966).
 
 ## License
 

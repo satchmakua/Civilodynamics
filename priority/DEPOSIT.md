@@ -31,7 +31,7 @@ description; keep the "honest status" language below.
 
 - **Title:** Civilodynamics: Canonical Corpus
 - **Creator:** Hamilton, Satchel — *Civilodynamics Initiative*
-- **ORCID:** `TODO — register a free ORCID and paste here + into CITATION.cff`
+- **ORCID:** https://orcid.org/0009-0001-9871-5607
 - **Publication date:** 2026-06-25
 - **Version:** 2026.06
 - **License:** CC BY 4.0 (see repo `LICENSE`; for Zenodo, this maps to the built-in `cc-by-4.0`)

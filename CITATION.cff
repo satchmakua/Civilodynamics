@@ -15,13 +15,13 @@ type: dataset
 authors:
   - family-names: Hamilton
     given-names: Satchel
-    # orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: add ORCID before deposit
+    orcid: "https://orcid.org/0009-0001-9871-5607"
     affiliation: "Civilodynamics Initiative"
 version: "2026.06"
-date-released: "2026-06-25"
+date-released: "2026-06-26"
 license: CC-BY-4.0
 repository-code: "https://github.com/satchmakua/Civilodynamics"
-# doi: "10.5281/zenodo.XXXXXXX"  # TODO: add Zenodo DOI after deposit
+doi: "10.5281/zenodo.20917966"
 keywords:
   - civilodynamics
   - cliodynamics
