@@ -1,6 +1,6 @@
 # Civilodynamics — Mathematical and Methodological Foundations
 
-**Canonical Corpus, Document 2 of 8 · Working Draft v0.1 · June 2026**
+**Canonical Corpus, Document 2 of 8 · Working Draft v0.2 · June 2026, revised November 2026**
 **Satchel Hamilton · Civilodynamics Initiative**
 
 > **Status of this document.** This is the formal core of the Civilodynamics corpus and the dependency for Documents 1 and 3–8. It consolidates and supersedes the earlier *Formalizing the Poliform* companion paper and the mathematical sections of the v1.0 Foundational Charter. It is a *working draft*: the framework is specified, but most quantities are not yet computed against data. Throughout, the document is explicit about what is **settled** (definitions, mathematical structure, estimability claims), what is **schematic** (illustrative values, candidate functional forms), and what is **deferred** (calibration, validation, and several open theoretical problems collected in §11). Where this draft corrects an error or overstatement in prior drafts, it says so in a marked **Correction** callout.
@@ -25,6 +25,7 @@ This document deliberately does **not** make substantive empirical claims about 
 - $^{\mathsf{T}}$ denotes transpose; $\Sigma^{-1}$ the inverse covariance (precision) matrix.
 - $t$ is time in years (historical work) with finer resolution permitted for contemporary measurement.
 - A **baseline** $\mathcal{B}$ is a stated reference interval for a specific society used to define "normal" for that society. Baselines are society-specific and explicitly defended, never universal.
+- $n$ and $p$ are reserved for the dimensions of $\mathbf{S}$ and $\mathbf{u}$; the number of observations in a baseline sample is written $m$.
 
 ---
 
@@ -59,7 +60,7 @@ $$\mathbf{u}(t) = \big(\sigma_{\mathrm{econ}},\; \sigma_{\mathrm{elite}},\; \sig
 
 corresponding to the prior corpus's economic stress, elite dynamics, legitimacy, social cohesion, epistemic coherence, and demographic pressure blocks (the $(E, D, L, C, \Psi, P)$ of the charter and Document 5). With sub-components, $p \approx 14\text{–}18$. These are **faster variables** — wages, trust, polarization, and media fragmentation move on the scale of months to a few years — and they are the quantities for which good modern time series exist.
 
-> **Correction (notation, vs. prior drafts).** The earlier symbol overlap is a hazard: configuration-$E$ is *energy throughput*, stress-$E$ is *economic stress*; configuration-$C$ is *coordination*, stress-$C$ is *cohesion*. They are distinct objects. Going forward the corpus should use $\mathbf{S}$ (with axes $E,C,I,X,T,K$) only for structural configuration and $\mathbf{u}$ (with axes $\sigma_{\bullet}$) only for the stress readout. Document 5 will be revised to adopt this.
+> **Correction (notation, vs. prior drafts).** The earlier symbol overlap is a hazard: configuration-$E$ is *energy throughput*, stress-$E$ is *economic stress*; configuration-$C$ is *coordination*, stress-$C$ is *cohesion*. They are distinct objects. The corpus uses $\mathbf{S}$ (with axes $E,C,I,X,T,K$) only for structural configuration and $\mathbf{u}$ (with axes $\sigma_{\bullet}$) only for the stress readout. Document 5 has been revised to adopt this.
 
 ### 1.3 The relationship between them
 
@@ -75,6 +76,8 @@ This separation lets us state the **central bridging hypothesis** of the discipl
 
 H0 is the load-bearing claim that connects the easily-measured stress layer to the structurally-fundamental morphospace layer. It is falsifiable: if computed stress indices do not co-vary with independently estimated distance-to-boundary across the retrodiction set (Document 6), H0 fails and the two layers must be treated as only loosely coupled.
 
+> **A condition on any test of H0 (added November 2026).** Several stress observables are baseline deviations of the very configuration axes that locate a society in $\Omega$ (Document 3 §2.2): inequality appears in both $X$ and $\sigma_{\mathrm{econ}}$, institutional trust in both $T$ and $\sigma_{\mathrm{leg}}$, the ECI in both $I$ and $\sigma_{\mathrm{epi}}$. If the stress index and the distance-to-boundary are computed from overlapping variables, they co-vary *by construction*, and H0 is confirmed by arithmetic rather than by evidence. "Independently estimated" therefore has a strict meaning: in any test of H0, the distance-to-boundary is computed on configuration variables that do not enter the stress index being tested (Document 4 §1).
+
 ---
 
 ## 2. The configuration space $\Omega$
@@ -84,11 +87,13 @@ H0 is the load-bearing claim that connects the easily-measured stress layer to t
 Each constraint layer is a vector of measurable sub-components. The minimal specification (full operational definitions, sources, and coverage windows are the subject of Document 4) is:
 
 - **Energy** $E = (e_{\mathrm{pc}},\, \mathrm{EROI},\, H_E)$: per-capita energy throughput (GJ/yr); system-level energy return on energy invested (dimensionless); Shannon entropy of the energy-source mix.
-- **Coordination** $C = (N,\, h,\, r,\, \rho_{\mathrm{inst}})$: population; number of coordination layers between median individual and apex node; empirical scaling ratio between adjacent layers; institutional scaffolding density (formal institutions per 10,000 population).
-- **Information** $I = (B,\, \lambda,\, V,\, H_I)$: per-capita reachable bandwidth (bits/day); propagation latency to 50% of population; verticality (top-down ÷ lateral volume); Shannon entropy of the information environment.
-- **Extraction** $X = (s,\, \boldsymbol{\mu},\, G,\, f,\, r_{\mathrm{rent}})$: surplus as fraction of output; modality vector across extraction types; Gini coefficient; fiscal capacity (share of output reliably extractable centrally); rent share.
-- **Trust** $T = (\tau_{\mathrm{inst}},\, \tau_{\mathrm{str}},\, \rho_{\mathrm{clan}},\, c)$: institutional trust; generalized stranger trust; trust-network radius; clustering coefficient.
+- **Coordination** $C = (N,\, \ell,\, r,\, \rho_{\mathrm{inst}})$: population; number of coordination layers between median individual and apex node; empirical scaling ratio between adjacent layers; institutional scaffolding density (formal institutions per 10,000 population).
+- **Information** $I = (b,\, \lambda,\, \zeta,\, H_I)$: per-capita reachable bandwidth (bits/day); propagation latency to 50% of population; verticality (top-down ÷ lateral volume); Shannon entropy of the information environment.
+- **Extraction** $X = (s,\, \boldsymbol{\xi},\, G,\, f,\, r_{\mathrm{rent}})$: surplus as fraction of output; modality vector across extraction types; Gini coefficient; fiscal capacity (share of output reliably extractable centrally); rent share.
+- **Trust** $T = (\tau_{\mathrm{inst}},\, \tau_{\mathrm{str}},\, \rho_{\mathrm{clan}},\, \kappa)$: institutional trust; generalized stranger trust; trust-network radius; clustering coefficient.
 - **Ecology** $K = (\mathrm{CC},\, \varepsilon,\, D_{\mathrm{clim}},\, D_{\mathrm{dis}})$: carrying capacity; population/carrying-capacity ratio; climate stability; disease pressure.
+
+> **Correction (notation, November 2026).** Five sub-component symbols collided with symbols used elsewhere in this document and are reassigned: coordination layers $h \to \ell$ (the map $h(\cdot)$ of §1.3 keeps $h$); bandwidth $B \to b$ ($B(\Pi)$ is a basin, $\mathcal{B}$ a baseline); verticality $V \to \zeta$ ($V$ is the potential); the extraction-modality vector $\boldsymbol{\mu} \to \boldsymbol{\xi}$ ($\boldsymbol{\mu}_{\mathcal B}$ is the baseline centroid); the clustering coefficient $c \to \kappa$ ($c_{g,k}$ is a correct-belief rate in Document 9). A sixth, the baseline sample size, is now $m$ so that $n$ means only the dimension of $\mathbf{S}$ (§4.4). The register is Document 7 §2 and §6.
 
 ### 2.2 The metric on $\Omega$
 
@@ -102,7 +107,7 @@ where $\Sigma$ is the covariance of empirical historical state vectors. This res
 
 ### 2.3 Forbidden regions
 
-Most of $\Omega$ is unoccupiable. A society cannot have $N = 10^{8}$ and $h \approx 1$ (a hundred million people cannot be coordinated by one face-to-face layer); it cannot have $B = 10^{10}$ bits/day reachable while trust is mediated only by oral consensus. Following the morphospace tradition (Document 3), the empirically realized region is a small subset of the geometrically possible region, carved by functional and developmental constraints. The existence and shape of these forbidden regions is the central empirical fact the configuration framework exists to explain — and it is testable: compute $\Omega$-coordinates for the Seshat-type sample and confirm the occupied region is sparse and clustered rather than space-filling.
+Most of $\Omega$ is unoccupiable. A society cannot have $N = 10^{8}$ and $\ell \approx 1$ (a hundred million people cannot be coordinated by one face-to-face layer); it cannot have $b = 10^{10}$ bits/day reachable while trust is mediated only by oral consensus. Following the morphospace tradition (Document 3), the empirically realized region is a small subset of the geometrically possible region, carved by functional and developmental constraints. The existence and shape of these forbidden regions is the central empirical fact the configuration framework exists to explain — and it is testable: compute $\Omega$-coordinates for the Seshat-type sample and confirm the occupied region is sparse and clustered rather than space-filling.
 
 ---
 
@@ -183,9 +188,16 @@ $$\textit{CSI}_{\mathrm{M}}(t) = \sqrt{\big(\mathbf{u}(t) - \boldsymbol{\mu}_{\m
 >
 > Concretely, with $p = 6$ top-level blocks, a baseline-typical state has $\textit{CSI}_{\mathrm{M}} \approx 2.45$ and the 95% contour is at $\approx 3.5$; with $p \approx 14$ sub-components, the baseline mean is $\approx 3.7$ and the 95% contour at $\approx 4.9$. Under the corrected reading, a value like $3.2$ is **inside** the baseline cloud, not "critical." The $2\sigma/3\sigma$ thresholds are correct only for $p = 1$.
 >
-> **The fix.** Set thresholds from the appropriate $\chi^2_p$ quantiles (e.g., the 95% stress contour is $\textit{CSI}_{\mathrm{M}} = \sqrt{\chi^2_{p,0.95}}$), and when $\boldsymbol{\mu}_{\mathcal B}$ and $\Sigma_{\mathcal B}$ are *estimated* from a finite baseline of size $n$, use the exact finite-sample distribution — a scaled $F$ (Hotelling's $T^2$):
-> $$\frac{n - p}{p\,(n-1)}\cdot\frac{n}{n+1}\;\textit{CSI}_{\mathrm{M}}^2 \;\sim\; F_{p,\, n-p}.$$
-> Because a historical baseline has a small *effective* $n$, this correction is not cosmetic: it widens the uncertainty on every threshold substantially. Finally, multivariate normality of $\mathbf{u}$ is itself an assumption — it should be tested (e.g., via the empirical distribution of $\textit{CSI}_{\mathrm{M}}^2$ over the baseline), and where it fails, thresholds should be set from the empirical baseline distribution or a Gaussianized transform rather than from $\chi^2$.
+> **The fix.** Set thresholds from the appropriate $\chi^2_p$ quantiles (e.g., the 95% stress contour is $\textit{CSI}_{\mathrm{M}} = \sqrt{\chi^2_{p,0.95}}$), and when $\boldsymbol{\mu}_{\mathcal B}$ and $\Sigma_{\mathcal B}$ are *estimated* from a finite baseline of $m$ observations, use the exact finite-sample distribution — a scaled $F$ (Hotelling's $T^2$), which holds for an observation outside the baseline sample:
+> $$\frac{m - p}{p\,(m-1)}\cdot\frac{m}{m+1}\;\textit{CSI}_{\mathrm{M}}^2 \;\sim\; F_{p,\, m-p}.$$
+> Because a historical baseline has a small *effective* $m$, this correction is not cosmetic: it widens the uncertainty on every threshold substantially. Finally, multivariate normality of $\mathbf{u}$ is itself an assumption — it should be tested (e.g., via the empirical distribution of $\textit{CSI}_{\mathrm{M}}^2$ over the baseline), and where it fails, thresholds should be set from the empirical baseline distribution or a Gaussianized transform rather than from $\chi^2$.
+
+> **A requirement the fix exposes (added November 2026).** The finite-sample form needs $m > p$, and needs it comfortably. With $m - p$ small, the $F$ quantiles are enormous and every threshold is uninformative; with $m \le p$, the sample covariance is singular and the distance is undefined. A historical baseline is short and serially correlated — 1948–1973 is 26 annual observations and far fewer *effective* ones — so it cannot support the full sub-component vector ($p \approx 14$), and may not support even the six blocks. Three consequences follow.
+> 1. *Dimension is chosen to fit the baseline.* $\textit{CSI}_{\mathrm{M}}$ is computed at the block level or on a few principal components, with $p$ well below the effective $m$, and the dimension used is reported.
+> 2. *More dimensions require shrinkage.* Where a larger $p$ is wanted, $\Sigma_{\mathcal B}$ is estimated with a shrinkage estimator (e.g., Ledoit–Wolf), and thresholds are taken from a block bootstrap of the baseline that respects its serial correlation — not from $F$, which no longer applies exactly.
+> 3. *Effective sample size is reported.* Every threshold is published with the effective $m$ behind it, not the nominal count of years.
+>
+> In-sample baseline points do not follow the $F$ form above; their squared distances follow a scaled Beta distribution, which matters when the baseline itself is being checked for normality.
 
 ### 4.5 Reporting standard
 
@@ -197,9 +209,9 @@ Report all three constructions together, on a single normalized scale, with thei
 
 The Epistemic Coherence Index (ECI) is the discipline's distinctive contribution and the least mature of its measures. It is the operationalization of the information axis $I$ in $\Omega$ and supplies the epistemic stress component $\sigma_{\mathrm{epi}}$ in $\mathbf{u}$. Conceptually, the ECI measures the degree to which a population shares a common factual and informational commons sufficient for collective deliberation to function. Three components (constructions and data in Document 4):
 
-- **Media Overlap Score:** $\textit{MOS}(t) = 1 - \mathrm{JSD}(P_A, P_B)$, the Jensen–Shannon divergence between the information-source distributions of two communities (bounded $[0,1]$; $0$ = identical, $1$ = disjoint). Estimable with good quality from ~2010, with reconstruction to ~2000.
+- **Media Overlap Score:** $\textit{MOS}(t) = 1 - \mathrm{JSD}(P_A, P_B)$, one minus the Jensen–Shannon divergence between the information-source distributions of two communities. Computed with base-2 logarithms, the divergence lies in $[0,1]$ ($0$ = identical distributions, $1$ = disjoint), so $\textit{MOS} = 1$ means a fully shared set of sources and $\textit{MOS} = 0$ none shared. Estimable with good quality from ~2012, with reconstruction to ~2000.
 - **Factual Consensus Rate:** the fraction of a standing battery of *verifiable* (not values-based) propositions on which agreement holds across partisan subgroups. **Requires new standing survey infrastructure** — no existing instrument tracks this consistently. This is a Phase-1 metrological investment, feasible and inexpensive at the scale of a rolling tracking poll, and is specified as a fieldable, pre-registered instrument in **Document 9**.
-- **Network Connectivity Index:** $\textit{NCI}(t) = E_{\mathrm{cross}} / (E_{\mathrm{cross}} + E_{\mathrm{within}})$, the share of cross-community ties in information-sharing networks (community structure detected by modularity); $0.5$ = balanced, $\to 0$ = hermetic separation.
+- **Network Connectivity Index:** $\textit{NCI}(t) = E_{\mathrm{cross}} / (E_{\mathrm{cross}} + E_{\mathrm{within}})$, the share of cross-community ties in information-sharing networks; $\to 0$ = hermetic separation. The balanced value is $0.5$ only for two communities of equal size: under random mixing the expected cross-tie share is $1-\sum_i s_i^2$ for community shares $s_i$. The index is therefore reported relative to that expectation and capped at 1, which makes it comparable across networks and bounded like the other two components. Communities are fixed by an exogenous partition (the same one the MOS uses), because communities found by modularity maximization have few cross-ties by construction (Document 4 §5.3).
 
 > **Why this axis is elevated, and the honest cost.** Treating the information environment as a primary state variable — not a background condition — is the cleanest of Civilodynamics' three novelty claims (Document 1). The cost is measurement immaturity and short coverage: the ECI cannot currently be carried back to a mid-century baseline (see §4.1), and its pre-2012 values are interpolations. The framework's credibility depends on *building* the ECI infrastructure rather than asserting ECI values; this is the single highest-priority empirical investment in the program (§11, Document 4, Document 8).
 
@@ -228,6 +240,14 @@ The potential is estimable from the empirical density of historical configuratio
 $$\hat V(\mathbf{S}) \approx -\log\hat\rho(\mathbf{S}),$$
 
 with $\hat\rho$ a kernel density estimate. **This recovers $V$ (hence basin centers and relative depths — Tier 1), not $\mathbf{F}$.** The gradient $-\nabla V$ is the relaxational part only; $R$ and the time-dependence of $V$ require longitudinal trajectory data and are Tier 2. Restating §3.3 in dynamical terms: density gives you the landscape's valleys; it does not give you the wind.
+
+> **What the density estimate assumes (added November 2026).** Reading $-\log\hat\rho$ as a potential is exact only under conditions the historical record does not obviously meet. They are stated here so that each can be checked, not assumed.
+> 1. *Stationarity.* The sample must come from a landscape that is not itself moving. But $V$ is explicitly time-dependent (§6.1), and the record spans regime changes in the constraint stack (§6.3, Type 2). The estimate is therefore made within eras of comparable constraint regime, not pooled across them.
+> 2. *Time-weighted sampling.* A stationary density is a density of *residence time*. Counting each polity once measures how many polities formed in a region of $\Omega$, not how long societies remain there. The sample is weighted by duration, or drawn at regular time intervals.
+> 3. *Record bias.* Long-lived, literate, large polities are over-represented in any historical database. A region of $\Omega$ may be sparse in the archive without being sparse in history.
+> 4. *Noise.* The identification holds for approximately homogeneous noise in the whitened coordinates, and it fixes $V$ only up to the noise scale. Depths are comparable relative to one another, never in absolute terms.
+> 5. *Uniqueness of the decomposition.* $\mathbf{F} = -\nabla V + R$ singles out the density-based $V$ only if the rotational part moves no probability across the level sets of $V$ ($R \perp \nabla V$, or more generally $\nabla\!\cdot(\rho R) = 0$). Otherwise $-\log\rho$ is a quasi-potential and is reported as one.
+> 6. *Dimension.* A kernel density estimate in $n \approx 24$ dimensions is not feasible on a few hundred polities. Density, modes, and depths are estimated in the low-dimensional basis recovered by the principal-components analysis of §7, and the result is reported with the dimension used.
 
 ### 6.3 A taxonomy of transitions
 
@@ -269,7 +289,7 @@ What the framework can and cannot compute today, stated plainly.
 **Cross-cutting statistical requirements.**
 - Finite-sample corrections (§4.4) wherever a baseline mean/covariance is estimated.
 - A test of multivariate normality of $\mathbf{u}$, with an empirical-distribution fallback for thresholds.
-- A principal-components analysis of the configuration sample to recover *effective* dimensionality, which is expected to be well below $n$ (energy and coordination, in particular, co-vary strongly), and which may reveal that the natural axes are composite factors (a "scale" factor over $N, h, \rho_{\mathrm{inst}}$; a "complexity" factor) rather than the raw six. Reporting in the composite basis is acceptable and consistent with what Peregrine and the Seshat clustering already find.
+- A principal-components analysis of the configuration sample to recover *effective* dimensionality, which is expected to be well below $n$ (energy and coordination, in particular, co-vary strongly), and which may reveal that the natural axes are composite factors (a "scale" factor over $N, \ell, \rho_{\mathrm{inst}}$; a "complexity" factor) rather than the raw six. This is consistent with the comparative record: Turchin and colleagues (2018) find that a single principal component carries roughly three-quarters of the variance across nine complexity characteristics in Seshat, and Peregrine (2018) and Miranda and Freeman (2020) recover similar scale and non-scale axes. Reporting in the composite basis is therefore not merely acceptable: density estimation is feasible only there (§6.2).
 
 **Reproducibility.** Every index is to be published with: its exact construction, the baseline interval and its justification, the data vintage, the normalization, the uncertainty, and code. A reference implementation is feasible with existing tools (Julia's `DifferentialEquations.jl` / `DynamicalSystems.jl`; Python's `pysindy` and standard scientific stack) and is scoped as Document/Deliverable in the program map (Document 8).
 
@@ -287,13 +307,13 @@ Social systems are modified by knowledge of their own dynamics; a sufficiently a
 
 The charter floats candidate quasi-conservation laws (legitimacy, coercive capacity, information entropy).
 
-> **Correction (vs. charter §3.2).** Invoking **Noether's theorem** for these is not warranted. Noether's theorem derives conservation laws from continuous symmetries of an **action functional**; Civilodynamics has no established action principle or Lagrangian, so there is presently no Noetherian route to a civilizational conservation law. These should be stated as **empirical quasi-conservation hypotheses** — e.g., "aggregate legitimacy is approximately conserved under transfer, so state-legitimacy decline predicts a measurable rise elsewhere" — each with an operational measure and a falsification condition. The Noether framing may be retained only as explicit aspiration ("were an action principle ever found, symmetries would imply conservation laws"), clearly marked as such.
+> **Correction (vs. the v1.0 charter, §3.2).** Invoking **Noether's theorem** for these is not warranted. Noether's theorem derives conservation laws from continuous symmetries of an **action functional**; Civilodynamics has no established action principle or Lagrangian, so there is presently no Noetherian route to a civilizational conservation law. These should be stated as **empirical quasi-conservation hypotheses** — e.g., "aggregate legitimacy is approximately conserved under transfer, so state-legitimacy decline predicts a measurable rise elsewhere" — each with an operational measure and a falsification condition. The Noether framing may be retained only as explicit aspiration ("were an action principle ever found, symmetries would imply conservation laws"), clearly marked as such.
 
 ### 8.3 Universality
 
 The hypothesis is that civilizational transitions fall into a small number of **universality classes** — the same mathematical behavior near transitions across radically different societies.
 
-> **Correction (vs. charter §3.6).** In statistical physics, a universality class is defined by renormalization-group fixed points and characterized by **critical exponents** and **data collapse**. Asserting that civilizational transitions form universality classes requires *demonstrating* such scaling, which has not been done. The honest status is a **research hypothesis with a concrete test**: near independently identified transitions in the retrodiction set, look for power-law scaling of fluctuations and for data collapse of suitably rescaled trajectories. Absence of scaling falsifies the universality hypothesis (though not the rest of the framework). Until then, "universality class" should appear only as a hypothesis under test.
+> **Correction (vs. the v1.0 charter, §3.6).** In statistical physics, a universality class is defined by renormalization-group fixed points and characterized by **critical exponents** and **data collapse**. Asserting that civilizational transitions form universality classes requires *demonstrating* such scaling, which has not been done. The honest status is a **research hypothesis with a concrete test**: near independently identified transitions in the retrodiction set, look for power-law scaling of fluctuations and for data collapse of suitably rescaled trajectories. Absence of scaling falsifies the universality hypothesis (though not the rest of the framework). Until then, "universality class" should appear only as a hypothesis under test.
 
 ---
 
@@ -306,8 +326,8 @@ The following demonstrates the apparatus on one case. **Every value below is an 
 | Axis | Illustrative state | Reading |
 |------|--------------------|---------|
 | $E$ | $e_{\mathrm{pc}}\!\approx\!18$ GJ; EROI $\approx 6\text{–}8$ (declining); low source entropy | Modest, agrarian-slave energy base near its complexity ceiling |
-| $C$ | $N\!\approx\!50$M; $h\!\approx\!7$; $r$ near natural value; high $\rho_{\mathrm{inst}}$ | Deep, well-scaffolded bureaucratic coordination |
-| $I$ | $B$ moderate (literate elite, oral majority); $\lambda\!\sim$ weeks; high $V$; declining $H_I$ | Top-down imperial information; narrowing under religious unification |
+| $C$ | $N\!\approx\!50$M; $\ell\!\approx\!7$; $r$ near natural value; high $\rho_{\mathrm{inst}}$ | Deep, well-scaffolded bureaucratic coordination |
+| $I$ | $b$ moderate (literate elite, oral majority); $\lambda\!\sim$ weeks; high $\zeta$; declining $H_I$ | Top-down imperial information; narrowing under religious unification |
 | $X$ | High but declining surplus; agrarian-tributary modality; high $G$; declining $f$; rising $r_{\mathrm{rent}}$ | Latifundia consolidation; eroding fiscal capacity |
 | $T$ | High $\tau_{\mathrm{inst}}$; moderate stranger trust; small regional $\rho_{\mathrm{clan}}$ | Regionally fragmenting trust topology |
 | $K$ | Declining CC (soil exhaustion); $\varepsilon\!\approx\!1$; worsening climate; elevated disease | Tightening ecological envelope post-Antonine/Cyprian plagues |
@@ -341,7 +361,7 @@ To convert §9.1–9.2 from illustration to result requires: (i) $\Omega$-coordi
 Collected here for the milestone tracker (Document 8). Each is a concrete, checkable task.
 
 **Mathematical / methodological.**
-1. Specify the map $h$ (configuration+rate → stress readout, §1.3) functionally, and test H0 (CSI ↔ distance-to-boundary) against the retrodiction set.
+1. Specify the map $h$ (configuration+rate → stress readout, §1.3) functionally, and test H0 (CSI ↔ distance-to-boundary) against the retrodiction set, under the measurement-independence condition of §1.3.
 2. Implement the corrected CSI thresholds ($\chi^2_p$ / Hotelling $F$, §4.4) and the per-dimension-normalized headline scalar; retire the $2\sigma/3\sigma$ language everywhere in the corpus.
 3. Resolve the baseline-covariance problem per §4.1 (default: coverage-restricted baseline + modern-era epistemic extension); document the choice in Documents 4 and 5.
 4. Pre-register the interaction terms $\beta_1,\beta_2,\beta_3$ (§4.3) and a stated functional form for $P(\text{ASPE}\mid \textit{CSI})$ with a base rate (so absence of events costs Brier points — see Document 5).
@@ -363,6 +383,27 @@ Collected here for the milestone tracker (Document 8). Each is a concrete, check
 **Statistical hygiene (continuous).**
 13. Multivariate-normality tests with empirical-distribution fallbacks (§4.4, §7).
 14. PCA for effective dimensionality and a decision on the reporting basis (§7).
+
+**Added November 2026.**
+15. Check the assumptions under which $-\log\hat\rho$ estimates $V$ (§6.2): estimate within eras, with time-weighted sampling, in the reduced basis, and assess record bias.
+16. Fix the dimension at which $\textit{CSI}_{\mathrm{M}}$ is computed against the effective baseline sample size; implement shrinkage covariance and block-bootstrap thresholds (§4.4).
+17. Enforce measurement independence in every test of H0 (§1.3; Document 4 §1).
+18. Normalize the NCI by its random-mixing expectation and fix the partition on which it is computed (§5; Document 4 §5.3).
+
+---
+
+## 12. Revision log
+
+| Version | Date | Change | Reason |
+|---------|------|--------|--------|
+| 0.1 | June 2026 | First canonical version | — |
+| 0.2 | November 2026 | §1.3: measurement-independence condition on tests of H0 | Shared variables would confirm H0 by construction |
+| 0.2 | November 2026 | §2.1, §2.3, §4.4, §7, §9.1: six symbols reassigned ($\ell$, $b$, $\zeta$, $\boldsymbol{\xi}$, $\kappa$, $m$) | Collisions with $h(\cdot)$, $B(\Pi)$, $V$, $\boldsymbol{\mu}_{\mathcal B}$, $c_{g,k}$, and $n$ |
+| 0.2 | November 2026 | §4.4: the finite-sample form requires $m > p$; dimension, shrinkage, and effective sample size made explicit | A 26-year baseline cannot support a 14-dimensional covariance |
+| 0.2 | November 2026 | §5: MOS logarithm base stated; NCI referred to its random-mixing expectation and to an exogenous partition; MOS coverage aligned with Document 4 (~2012) | The $[0,1]$ bound and the "0.5 = balanced" reading held only in special cases |
+| 0.2 | November 2026 | §6.2: assumptions behind $\hat V \approx -\log\hat\rho$ stated | They were implicit, and the historical record does not obviously satisfy them |
+| 0.2 | November 2026 | §7: comparative record cited precisely (Turchin et al. 2018; Peregrine 2018; Miranda and Freeman 2020) | The earlier phrase "the Seshat clustering" rested on a misattributed study (Document 3 §3.1) |
+| 0.2 | November 2026 | §11: items 15–18 added | Track the above |
 
 ---
 

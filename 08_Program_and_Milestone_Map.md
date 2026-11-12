@@ -1,55 +1,76 @@
 # Civilodynamics — Program and Milestone Map
 
-**Canonical Corpus, Document 8 of 8 · Living Document · Version 0.6 · Last updated: June 2026 (building phase — FCR Stage-1 specs complete (Docs 9–12); Stage C0 priority package drafted)**
+**Canonical Corpus, Document 8 of 8 · Living Document · Version 0.7 · Last updated: November 2026**
 **Satchel Hamilton · Civilodynamics Initiative**
 
-> **What this document is.** A single, continuously updated map of (A) the foundational document corpus, (B) the scientific research program, and (C) the dissemination, positioning, and promotion plan — plus a risk register and a near-term action list. It exists to keep both author and collaborator oriented: what is done, what is next, what each step depends on, and what success would look like in falsifiable or checkable terms. It supersedes the informal multi-phase plan in the working notes.
+> **What this document is.** A single, continuously updated map of (A) the foundational corpus, (B) the scientific research program, and (C) dissemination and positioning — plus a risk register and a near-term action list. It records what is done, what is next, what each step depends on, and what success would look like in falsifiable or checkable terms.
 >
-> **How to use it.** This is the one document that is *meant* to change every working session. At the end of each session, update statuses, log completed items with dates, and re-sequence as reality dictates. It is an internal planning instrument, written in formal register but not intended for public circulation in its current form.
+> **How to read it.** This is the one document in the corpus that is *meant* to change. Statuses are updated, completed items are logged with dates, and the tracks are re-sequenced as reality dictates. It is published with the rest of the corpus in keeping with the transparency commitment (Charter §10): a program that asks to be held to its predictions should also show where it actually stands. It is a working plan, not a finished statement.
 >
 > **Status legend:** `[DONE]` · `[IN PROGRESS]` · `[NOT STARTED]` · `[BLOCKED — dependency]`.
 
 ---
 
-## 0. Honest baseline — where the program actually stands (June 2026)
+## 0. Honest baseline — where the program actually stands (November 2026)
 
-This is Phase 0. The program is at its genuine beginning, and the map reflects that without inflation.
+The program is still at its beginning, and the map says so without inflation. Five months after the founding deposit the documents are public and better checked. Nothing has yet been computed, fielded, or validated.
 
 **What exists today:**
-- **The complete foundational corpus — all eight canonical documents — `[DONE]` (v0.1 / v2.0 drafts).** The original draft papers have been superseded by the rationalized canon (Documents 1–8): Charter v2, Mathematical Foundations, Poliform Theory v2, Measurement Program, the revised U.S. case study, the Retrodiction Casebook, the Lexicon & Ontology, and this map. This is the program's substantive asset to date.
-- **The first building-phase artifact — Document 9 — `[DONE]` (v0.1 draft).** With the foundational corpus complete, the program has begun the build: Document 9 specifies and pre-registers the Factual Consensus Rate instrument (the highest-priority empirical investment, Charter §5), operationalizing Document 4 §5.2 into a fieldable survey and pre-analysis plan. It is the first of a building-phase document series, tracked under Track B (Phase B1), not as a ninth *foundational* document. Its Stage-1 deliverable now exists in draft — the anchor-core item bank (Document 10) and the pre-analysis plan (Document 11) — pending adjudication, cognitive pretest, and freeze. It is all specification on paper; nothing has yet been fielded or computed.
-- **Nothing computed or fielded yet.** The canon plus the FCR specification are a coherent, falsifiable, internally consistent *skeleton plus its first build plan*. The document phase is complete; the program is now in the building phase — data, computation, validation — and still owes the establishment of priority.
+- **The foundational corpus — Documents 1–8 — `[DONE]`, revised November 2026.** Charter, Mathematical Foundations, Poliform Theory, Measurement Program, the U.S. case study, the Retrodiction Casebook, the Lexicon and Ontology, and this map. This is the program's substantive asset to date.
+- **The building-phase documents — 9–12 — `[DONE]` as specifications.** The Factual Consensus Rate instrument and its pre-registration (9), the draft item bank (10), the pre-analysis plan (11), and the procedures that take the instrument to freeze (12). All of it is specification on paper; nothing has been fielded.
+- **A public record.** The corpus was deposited on Zenodo on 26 June 2026 (founding snapshot: DOI 10.5281/zenodo.20917966; all versions: DOI 10.5281/zenodo.20917965). The repository is public, a one-page site is live, and the author is identified by ORCID.
+- **A corrected corpus.** A review in November 2026 found errors in the published documents and corrected them in the open (Track A below).
 
 **What does *not* yet exist (stated plainly, so the map is honest):**
-- **No external footprint:** no priority timestamp (arXiv/OSF/Zenodo), no registered namespace, no website, no public writing, no journal submission, no institutional affiliation, no grant, no collaborator.
-- **No empirical or computational infrastructure:** no computed CSI (all values to date are illustrative estimates), no computed basin/morphospace, no *fielded* ECI measurement infrastructure (the FCR instrument is specified and pre-registered in Document 9 but not yet fielded), no configuration database, no reference implementation.
-- **No validation:** no retrodiction has been computed or scored; no prospective prediction is yet registered under corrected methodology.
+- **No reach beyond the deposit:** no preprint on arXiv or OSF, no registered domain, no public writing, no journal submission, no institutional affiliation, no grant, no collaborator, and no outside review.
+- **No empirical or computational infrastructure:** no computed CSI (all values to date are illustrative estimates), no computed basin or morphospace, no fielded ECI measurement (the FCR instrument is specified, not fielded; the MOS pipeline is not built), no configuration database, no reference implementation.
+- **No validation:** no retrodiction has been computed or scored. Five prospective predictions are registered (April 2026; Document 5 §7) as calibrated subjective estimates, not model outputs, and none has reached its resolution date.
 
-**One-line summary:** *The asset is the ideas and the rigor. Everything else — priority, evidence, audience, institutions, income — is to be built, and the order in which it is built matters.*
+**One-line summary:** *The asset is the ideas and the rigor. Everything else — evidence, audience, institutions — is still to be built, and the order in which it is built matters.*
 
 **Governing sequencing principles (carried into every track below):**
-1. **Rigor leads reach.** Establish priority cheaply now; defer aggressive public promotion of *predictive* claims until measurement infrastructure is real. Overclaiming before validation is the fastest way to lose the academic audience whose endorsement the program needs.
-2. **Financial stability first.** Contract-engineering income is the runway. Civilodynamics is built alongside it (evenings/weekends, then increasing share) and becomes an income source only after credibility accrues — not the financing mechanism for near-term life decisions.
-3. **Generosity and narrow novelty.** Be scrupulously generous to Turchin and cliodynamics; stake the discipline's novelty narrowly and precisely on (i) the epistemic/information layer as a first-class state variable, (ii) the poliform↔morphospace integration, (iii) real-time measurement.
+1. **Rigor leads reach.** Establish priority cheaply and early; defer public promotion of *predictive* claims until the measurement infrastructure is real. Overclaiming before validation is the fastest way to lose the audience the program most needs to convince.
+2. **Sustainability.** The program is self-funded and paced to last. It is not relied on for income, and it accepts no funding on terms that would compromise it (Charter §10).
+3. **Generosity and narrow novelty.** Credit cliodynamics and Turchin's work fully; stake the discipline's novelty narrowly and precisely on (i) the epistemic/information layer as a first-class state variable, (ii) the poliform↔morphospace integration, (iii) real-time measurement.
 
 ---
 
 ## A. Track A — The Foundational Corpus
 
-The internal documents we are building together. Build order: **2 → 1 → 4 → 3 → 5 → 6 → 7 → 8.**
+The eight documents of the canon. Build order: **2 → 1 → 4 → 3 → 5 → 6 → 7 → 8.**
 
 | # | Document | Status | Depends on | Definition of "done" |
 |---|----------|--------|-----------|----------------------|
-| 2 | Mathematical & Methodological Foundations | `[DONE]` v0.1 | — | Corrected core: two-vector reconciliation, CSI/χ² fix, basin tiers, deferred-work list. ✔ |
-| 1 | Foundational Charter v2 | `[DONE]` v2.0 | 2 | Rebalanced toward Turchin; novelty staked on the three claims; US example removed (→ #5); ethics, validation philosophy, institutional blueprint; defers to #2 for math. ✔ |
-| 4 | Measurement Program & Data Architecture | `[DONE]` v0.1 | 2 | Every index operationalized with sources, coverage, and gaps; baseline-covariance resolution made concrete (assignment table); ECI/FCR instrument spec. ✔ |
-| 3 | Poliform Theory v2 | `[DONE]` v2.0 | 2 | Coherence-first; homology not identity; clusters (Tier 1) vs attractors (Tier 2); convergence-vs-diffusion confound foregrounded; catalog graded by independence. ✔ |
-| 5 | U.S. 2000–2024 Case Study (Working Paper No. 1, revised) | `[DONE]` Rev 2.0 | 2, 4 | χ² fix applied; CSI values labeled illustrative; Weimar reframed as hypothesis-generating; contested claims demoted to falsifiable sub-hypotheses; predictions preserved at original timestamp. ✔ |
-| 6 | Retrodiction Casebook | `[DONE]` v0.1 | 2, 3, 4 | Positive cases + negative controls; two-sided scoring; blind-computation + pre-registered quantitative test; cases tagged by tier. ✔ |
-| 7 | Lexicon & Ontology | `[DONE]` v0.1 | 1–6 | Controlled vocabulary, notation table, concept ontology, status tags, and deprecated-usage register; resolved two further symbol collisions. ✔ |
+| 2 | Mathematical & Methodological Foundations | `[DONE]` v0.2 | — | Corrected core: two-vector reconciliation, CSI/χ² fix, basin tiers, deferred-work list. ✔ |
+| 1 | Foundational Charter | `[DONE]` v2.0.1 | 2 | Rebalanced toward Turchin; novelty staked on the three claims; U.S. example removed (→ #5); ethics, validation philosophy, institutional blueprint; defers to #2 for math. ✔ |
+| 4 | Measurement Program & Data Architecture | `[DONE]` v0.2 | 2 | Every index operationalized with sources, coverage, and gaps; baseline-covariance resolution made concrete (assignment table); ECI/FCR instrument spec. ✔ |
+| 3 | Poliform Theory | `[DONE]` v2.1 | 2 | Coherence-first; homology not identity; clusters (Tier 1) vs attractors (Tier 2); convergence-vs-diffusion confound foregrounded; catalog graded by independence; constraint stack stated. ✔ |
+| 5 | U.S. 2000–2024 Case Study (Working Paper No. 1) | `[DONE]` Rev 2.1 | 2, 4 | χ² fix applied; CSI values labeled illustrative; Weimar reframed as hypothesis-generating; contested claims demoted to falsifiable sub-hypotheses; predictions preserved at original timestamp. ✔ |
+| 6 | Retrodiction Casebook | `[DONE]` v0.2 | 2, 3, 4 | Positive cases + negative controls; two-sided scoring; blind computation with an outcome-blind baseline; pre-registered quantitative test with its chance levels stated. ✔ |
+| 7 | Lexicon & Ontology | `[DONE]` v0.2 | 1–6 | Controlled vocabulary, notation table, concept ontology, status tags, and deprecated-usage register. ✔ |
 | 8 | Program & Milestone Map (this document) | `[IN PROGRESS]` (living) | all | Maintained continuously; never "done." |
 
-**Immediate corpus task:** None — the foundational corpus is complete (all eight documents drafted to canon standard) and internally reconciled. The $\Phi$/$\mathcal{E}$ symbol adoption flagged in earlier versions is in place (Document 2 §8.1, §11.10; Document 7 §2), and the reconciliations created by Document 9 (FCR notation and terms into Document 7; cross-references in Documents 2, 4, 5) are applied. The program now advances on **Track B** (Phase B1 — the building-phase documents begin with Document 9) and **Track C** (Stage C0, priority establishment). Building-phase artifacts are tracked under Track B below, not appended to the foundational eight.
+### The November 2026 review
+
+Five months after the founding deposit the whole corpus was re-read against its sources and against itself. The errors found were corrected in place, each with a dated correction note or revision log in the affected document, and the retired usages were entered in Document 7 §6. The founding snapshot on Zenodo is unchanged and still shows the originals.
+
+| Finding | Corrected in |
+|---------|--------------|
+| The Seshat clustering study was attributed to the wrong authors (it is Miranda and Freeman 2020) | Documents 1, 2, 3 |
+| The flagship evidence for convergence called the Plains nomad societies "wholly out of contact" with the Old World; the horse was an Old World introduction | Document 3 |
+| Three sourcing errors in the flagship paper: a wealth series, a mobility citation, a doctorate count | Document 5 |
+| Seven symbol collisions the lexicon had declared resolved | Documents 2, 4, 7, 9 |
+| The Mahalanobis stress index needs more baseline observations than dimensions, which the U.S. baseline does not supply | Documents 2, 4 |
+| The assumptions behind estimating a potential from the density of historical states were unstated | Document 2 |
+| A test of the bridging hypothesis could be confirmed by shared variables alone | Documents 2, 4 |
+| The retrodiction baseline was not blind to the outcome, and the nine-case test is close to powerless | Document 6 |
+| Two measures were mis-defined: one had its sign reversed, one named a data source that cannot supply it | Document 4 |
+| The FCR statistic was diluted by filler items and moved with sample size; an answer key was already out of date; the instrument was wrongly said to resolve Prediction 2 | Documents 5, 9, 10, 11, 12 |
+| Three documents pointed to a constraint-stack section that no longer existed | Document 3 |
+
+None of these changes a registered prediction or a commitment of the charter. Several weaken a piece of evidence or narrow a claim, and the affected documents say so where it applies.
+
+**Corpus status:** complete and reviewed. Building-phase documents are tracked under Track B, not appended to the foundational eight. The corrected corpus is not yet archived: a new tagged release is a near-term action (§E).
 
 ---
 
@@ -60,33 +81,35 @@ Research milestones tied to the corrected core. Each phase lists its objective, 
 ### Phase B1 — Measurement and first computations
 *Objective:* turn the framework from a skeleton into something that touches data; produce the first *computed* (not estimated) quantities.
 
-- Build the ECI measurement infrastructure: standing factual-consensus battery + survey, MOS and NCI pipelines, best feasible backward reconstruction. **[§11.5 — highest-priority empirical investment.]**
-  - **FCR instrument: specified and pre-registered `[DONE]` (Document 9).** The fieldable survey, incentivized-accuracy design, item-bank rules, ground-truth adjudication, and pre-analysis plan are fixed. Remaining build, per Document 9 §11: **Stage 1** `[IN PROGRESS — specs complete]` — item bank (**Document 10**), pre-analysis plan (**Document 11**), and freeze-gating protocols (**Document 12**) all drafted; the paper specification of Stage 1 is complete and what remains is *execution by people*: convene the adjudication panel, run the two cognitive-pretest rounds, then freeze the instrument and register the plan; **Stage 2** — pilot wave; **Stage 3** — standing quarterly tracker → first *computed* FCR series; **Stage 4** — integrate with MOS/NCI into the ECI and the modern-era $\sigma_{\mathrm{epi}}$. Fielding it (Stage 3) is what makes Document 5 Prediction 2 live.
+- Build the ECI measurement infrastructure: standing factual-consensus battery and survey, MOS and NCI pipelines, best feasible backward reconstruction. **[§11.5 — highest-priority empirical investment.]**
+  - **FCR instrument.** Specification and pre-registration `[DONE]` (Document 9, revised November 2026). **Stage 1** `[IN PROGRESS — specifications complete]`: the item bank (Document 10), pre-analysis plan (Document 11), and freeze-gating procedures (Document 12) are drafted. What remains needs people, not more documents: convene the adjudication panel, run two rounds of cognitive pretesting, then freeze the instrument and register the plan. **Stage 2** `[NOT STARTED]`: pilot wave. **Stage 3** `[NOT STARTED]`: standing quarterly tracker and the first *computed* FCR series. **Stage 4** `[NOT STARTED]`: integration with the MOS and NCI into the ECI and the modern-era $\sigma_{\mathrm{epi}}$.
+  - **MOS pipeline** `[NOT STARTED]` — **time-critical.** Document 5's Prediction 2 compares the ECI in 2028 with 2024, and the FCR has no 2024 value, so the prediction resolves on the MOS (Document 9 §7; Document 5 §7). The method must be frozen and the 2024 value computed well before 2028, so that the comparison cannot be tuned to its own outcome.
 - Assemble a Seshat-compatible configuration database with full six-axis coverage, prioritizing the under-served information ($I$) and trust ($T$) axes. **[§11.6]**
-- Compute $\Omega$-coordinates for the sample; estimate $\hat V = -\log\hat\rho$ → basin centers and relative depths (Tier 1). **[§11.6]**
-- Implement corrected CSI thresholds ($\chi^2_p$ / Hotelling-$F$) and the per-dimension-normalized headline scalar; compute the U.S. CSI end-to-end on the coverage-restricted vector. **[§11.2, §11.3]**
+- Compute $\Omega$-coordinates for the sample; estimate $\hat V = -\log\hat\rho$ → basin centers and relative depths (Tier 1), within eras, with time-weighted sampling, in the reduced basis. **[§11.6, §11.15]**
+- Implement corrected CSI thresholds ($\chi^2_p$ / Hotelling-$F$) and the per-dimension-normalized headline scalar, at a dimension the baseline's effective sample size can support; compute the U.S. CSI end-to-end on the coverage-restricted vector. **[§11.2, §11.3, §11.16]**
 
 *Success criteria (falsifiable):*
-- The occupied region of $\Omega$ is **sparse and clustered, not space-filling** (direct test of the morphospace claim). *If occupancy is diffuse, the poliform claim weakens.*
+- The occupied region of $\Omega$ is **sparse and clustered, not space-filling** (direct test of the morphospace claim). *If occupancy is diffuse, or is a smooth continuum along a single dimension of scale, the poliform claim weakens.*
 - The computed U.S. CSI trajectory is qualitatively robust across the three constructions and across alternative baselines (shape stable; absolute level may shift). *If constructions disagree sharply in shape, the index is not yet meaningful.*
 
 ### Phase B2 — Retrodiction and first validation
 *Objective:* test the framework against history under pre-registered criteria.
 
+- Enlarge the control set and register it, with the baseline rule and the test threshold, before any case is computed. **[Document 6 §2, §5.3]**
 - Assemble longitudinal per-polity trajectories for the retrodiction set. **[§11.7]**
-- Compute retrodictions for Document 6's cases at the supportable tier; test the **Bridging Hypothesis H0** (CSI co-varies with independently estimated distance-to-boundary). **[§11.1]**
+- Compute retrodictions for Document 6's cases at the supportable tier; test the **Bridging Hypothesis H0** (CSI co-varies with independently estimated distance-to-boundary) under measurement independence. **[§11.1, §11.17]**
 - Pre-register $P(\text{ASPE}\mid \textit{CSI})$ with a base rate and the interaction terms $\beta_1,\beta_2,\beta_3$. **[§11.3, §11.4]**
 
 *Success criteria (falsifiable):*
-- Elevated CSI **precedes** the known transitions in the retrodiction set in ≥ 80% of cases (the charter's retrodiction bar). *Failure here falsifies the core empirical claim and forces revision or abandonment.*
-- H0 holds: CSI and distance-to-boundary are monotonically related across cases. *If not, the stress and morphospace layers are only loosely coupled and must be treated separately.*
+- The index **discriminates** transitions from high-stress non-transitions: elevated stress precedes the known transitions and is absent, or accompanied by a correction signature, in the controls, at a threshold set in advance against the stated chance levels. *Failure here falsifies the core empirical claim and forces revision or abandonment.* The original nine cases cannot deliver this verdict on their own — on them an 80% score arises by chance about one time in twelve (Document 6 §5.3) — which is why the control set is enlarged first.
+- H0 holds: CSI and distance-to-boundary are monotonically related across cases, with no variable shared between the two. *If not, the stress and morphospace layers are only loosely coupled and must be treated separately.*
 
 ### Phase B3 — Dynamics and prediction infrastructure
 *Objective:* move from Tier 1 (location/depth) toward Tier 2 (flow), and stand up the public prediction record.
 
 - Pilot reconstruction of the vector field $\mathbf{F}$ (SINDy / Koopman / neural ODE) on the richest available trajectory; **report honestly whether the data support it yet.** **[§11.9]**
 - Reference software implementation: $\hat V$ and basin structure from input data; three CSI constructions with uncertainty; diagnostics for arbitrary state vectors. **[§11.8]**
-- Launch the public, timestamped, Brier-scored prediction platform (also a Track-C asset).
+- Launch the public, timestamped, Brier-scored prediction platform (also a Track C asset).
 
 *Success criteria (checkable):*
 - Prospective predictions achieve **Brier scores better than a naive base-rate baseline** over the tracking window. *This is the discipline's central scientific accountability test.*
@@ -102,53 +125,49 @@ Research milestones tied to the corrected core. Each phase lists its objective, 
 - A common core parameter set generalizes across civilizational types (with culturally specific secondary parameters). *If each case needs a wholly different model, the universality ambition fails — though the descriptive framework may survive.*
 
 ### Phase B5 — Theoretical maturation (lower urgency, higher reward)
-- Reflexivity: specify and pilot-estimate the coupling $R(O,\mathcal E)$. **[§11.10]**
+- Reflexivity: specify and pilot-estimate the coupling $\Phi(O,\mathcal E)$. **[§11.10]**
 - Conserved quantities: operationalize and test the legitimacy-transfer hypothesis. **[§11.11]**
 - Formal dynamical-systems monograph; the field's theoretical reference text.
 
 ---
 
-## C. Track C — Dissemination, Positioning, and Promotion
+## C. Track C — Dissemination and Positioning
 
-What the founder personally does, at each stage, to promulgate, advance, and promote the discipline — sequenced under *rigor leads reach*. This is the track that answers "what do I do now, and next."
+How the discipline is made public and connected to the fields it draws on, sequenced under *rigor leads reach*.
 
-### Stage C0 — Establish existence (do now; cheap; appropriate even at zero validation)
+### Stage C0 — Establish existence (cheap; appropriate even at zero validation)
 These steps secure priority and presence **without making any predictive claim**, so they carry no overclaiming risk.
 
-> **Status (June 2026): in-repo artifacts drafted; execution is account-gated.** The web flag (`index.html`), citation metadata (`CITATION.cff`), license (`LICENSE`, CC BY 4.0 recommended), and the ready-to-paste deposit packet (`priority/DEPOSIT.md`) exist. The remaining steps — Zenodo DOI, GitHub Pages, arXiv, namespace, OSF — require accounts/payment and are checklisted in `priority/CHECKLIST.md` (Zenodo + Pages first for a same-day flag).
+- **Timestamp priority.** `[DONE]` for the corpus: deposited on Zenodo, 26 June 2026. `[NOT STARTED]` for preprint servers: the Charter and the flagship paper are prepared for submission (`priority/arxiv/`, rebuilt from the corrected sources in November 2026) but not submitted.
+- **Web flag.** `[DONE]` A single page — name, definition, honest status, founding documents, DOI — live since June 2026.
+- **Author identity.** `[DONE]` ORCID registered and attached to the citation metadata.
+- **Secure the namespace.** `[NOT STARTED]` — overdue. The `civilodynamics` domains were still unregistered in November 2026. Until they are registered, no address at them is published anywhere in the corpus or on the site.
+- **Deposit metadata.** `[IN PROGRESS]` The founding record is typed as software and lacks the ORCID. A `.zenodo.json` now sets both for future releases; the existing record needs a manual edit.
+- **Working-paper repository.** `[NOT STARTED]` An OSF project to give the corpus and later work a permanent home. It is also where the FCR pre-analysis plan is registered when the instrument freezes (Document 11 §11).
 
-- **Timestamp priority.** Once the Charter v2 (#1) and the revised flagship paper (#5) exist as clean documents, deposit them to **arXiv** (physics.soc-ph or q-bio.PE), **OSF**, and **Zenodo** (for a citable DOI). The existing drafts can be deposited sooner if you want the flag in the ground immediately; the canon versions supersede them. *Effect: permanent, citable, dated record of the discipline with your name on it.*
-- **Secure the namespace.** Register `civilodynamics.org`/`.com`; claim the handle across platforms; hold `r/Civilodynamics`. Low cost, real downside if neglected.
-- **Minimal web flag.** A single page: name, one-paragraph definition, link to the deposited founding document (DOI), founder name, email signup. `[DRAFTED — index.html; deploy via GitHub Pages, CHECKLIST step 2]`
-- **Working-paper repository.** Stand up an OSF/SSRN working-paper series so the corpus and future work have a permanent home.
+The steps that need an account or a payment are listed in `priority/CHECKLIST.md`.
 
-### Stage C1 — Enter the conversation (as the first canon outputs land)
-- **Flagship paper to peer review.** Submit Document 5 (revised). Realistic first targets: *Cliodynamics: The Journal of Quantitative History and Cultural Evolution*, *PLOS ONE*, or a complex-systems venue; ambitious stretch targets (PNAS, *Nature Human Behaviour*, *J. R. Soc. Interface*) worth one attempt. **Treat rejection as data** — peer review tells you what the credentialed community thinks is missing; revise and resubmit.
-- **Recruit one credentialed collaborator.** Target Turchin's group/former students, SFI external faculty, and complexity-social researchers (e.g., NECSI, ETH/Helbing-adjacent, MIT Media Lab alumni). Pitch a **specific idea or the specific paper**, never the grand vision; a three-paragraph email (who you are; one substantive point of intersection with their work; one concrete ask). A co-author with affiliation materially raises acceptance odds and confers legitimacy.
-- **Begin a modest Substack — explanatory, not triumphant.** Topics that build a voice without overclaiming: explaining cliodynamics; the epistemic-coherence problem; why event-level political analysis fails at structural prediction; method notes. *Avoid headline predictive claims until the infrastructure exists.*
-- **Adjacent engagement.** Substantive commentary on complexity/cliodynamics work on the platforms where that community is; targeted podcast pitches (complexity/forecasting/futures shows) once a preprint exists.
+### Stage C1 — Enter the conversation (as the first outputs land)
+- **Peer review.** Submit the flagship paper (Document 5) to a quantitative-history or complex-systems venue. Treat a rejection as information about what the field finds missing; revise and resubmit.
+- **Outside readers.** Ask researchers who have no stake in the framework to review the corpus adversarially before the next deposit (Document 6 §6). The November 2026 review showed what a single author misses.
+- **A collaborator.** Seek one credentialed collaborator among researchers in cliodynamics and complexity social science, approaching with a specific point of intersection with their work, not the grand vision. The adjudication panel of Document 12 is a natural first collaboration: it needs exactly the external, cross-perspective judgment one author cannot supply.
+- **Explanatory writing.** Public writing that explains without overclaiming — cliodynamics, the epistemic-coherence problem, why event-level analysis fails at structural prediction, method notes. No headline predictive claims until the measurement exists.
+- **Engagement.** Substantive commentary on existing complexity and cliodynamics work, where that community already is.
 
 ### Stage C2 — Build credibility and resources (as validation accrues)
-- **First grants.** *Emergent Ventures* (short, informal; explicitly funds unconventional ideas) is the most plausible early target — appropriate once the flagship paper is a public preprint. Then, with a submitted paper and some affiliation: *INET* (heterodox social science), *Templeton* (big questions), and later NSF/NEH/DARPA and private foundations. Frame applications around the corrected, falsifiable program — not the manifesto.
-- **Institutional affiliation (no PhD required).** Affiliated/visiting researcher status at SFI external faculty, NECSI, IAST, or a local university (the relevant flagship state university, given the planned relocation) — leverages a preprint with traction + a collaborator inside. Confers email, library/grant eligibility, and a legitimacy signal.
-- **Prediction platform (B3) as a visibility asset.** A public, timestamped, Brier-scored record is genuinely unusual for an academic field and is simultaneously a scientific accountability tool and the strongest credibility/visibility instrument available — *because* it holds the discipline to a standard most fields avoid.
+- **Grants.** Small unrestricted grants for unconventional research first; foundations and public research agencies once a paper is under review and an affiliation exists. Applications rest on the corrected, falsifiable program, not on the ambition.
+- **Affiliation.** Visiting or affiliated-researcher status at a complexity institute or a university, for library access, grant eligibility, and accountability to colleagues.
+- **The prediction record (B3).** A public, timestamped, Brier-scored record is unusual for an academic field. It is at once the program's accountability mechanism and its strongest claim to be taken seriously, because it holds the discipline to a standard most fields avoid.
 
 ### Stage C3+ — Institutionalize (as a track record builds)
-- Working-paper series → invitation-only workshop (≈25 people; consider hosting via SFI's workshop program) → **Journal of Civilodynamics** (diamond open-access, OJS, pre-registration requirement, small credentialed editorial board) → graduate seminar/certificate at a partner university → policy engagement (briefs, testimony, advisory) once the calibration record justifies it → trade book.
-
-### Funding and income pathways (illustrative, uncertain, externally contingent)
-These are *possibilities and targets*, not projections or guarantees, and they are downstream of credibility. Not financial advice; figures are rough ranges for planning only.
-- **Grants:** the ecosystem above, from ~$5–100k (Emergent Ventures) early to $100–500k (NSF/Templeton/foundations) once affiliated.
-- **Writing:** a Substack with a genuine analytical voice in a hot space *can* reach meaningful paid readership over years; treat as a slow compound, not near-term income.
-- **Speaking / consulting:** real once a publication and public profile exist; political-risk and long-horizon-macro consulting is potentially the highest-value application, and a later-stage play.
-- **Institute compensation:** a director salary is a late-stage (years-out) outcome contingent on the institute existing and being funded.
-- **Runway throughout:** contract-engineering income remains primary until CVD income is demonstrably stable.
+Working-paper series → an invitation-only workshop → a diamond-open-access journal with a pre-registration requirement → a graduate seminar at a partner university → policy engagement once the calibration record justifies it → a book. The shape is the charter's (§9); none of it is near.
 
 ### Positioning guardrails (apply to everything in Track C)
-- Be generous to Turchin; stake novelty narrowly on the three claims (do not position CVD as "superseding" a respected living figure whose collaborators you want).
+- Credit cliodynamics fully and stake novelty narrowly on the three claims. The discipline extends its parent program; it is never framed as superseding it.
 - Never present estimated quantities as computed in any public artifact.
-- Defer public promotion of *predictive* claims until measurement infrastructure is real.
-- Keep the contested political claims (Document 5) framed as operationalized, falsifiable sub-hypotheses, not assertions — both for rigor and to avoid the work being dismissed as partisan.
+- Defer public promotion of *predictive* claims until the measurement infrastructure is real.
+- Keep the contested political claims (Document 5) framed as operationalized, falsifiable sub-hypotheses, not assertions — for rigor, and because a partisan reading would discredit the science.
+- Correct errors where they were published, with the date and the reason.
 
 ---
 
@@ -156,31 +175,39 @@ These are *possibilities and targets*, not projections or guarantees, and they a
 
 | Risk | Why it matters | Mitigation |
 |------|----------------|------------|
-| **Credibility collapse from overclaiming** | One uncorrected error like the χ² misreading going public could discredit the whole program with the exact audience it needs. | Rigor-first; corrections made openly (as in Document 2); estimated never presented as computed. |
-| **Positioning trap** | Being read as "cliodynamics + a layer," or as a Turchin competitor, forecloses the alliances that confer legitimacy. | Scrupulous generosity; novelty staked narrowly on the three claims. |
-| **Political-perception risk** | The U.S. case can read as partisan, which would taint the science. | Demote contested claims to operationalized sub-hypotheses with stated falsification; maintain evenhandedness. |
-| **Confirmation / overfitting (the "single-party parliament" failure)** | Retrodiction invites fitting the framework to the cases it is meant to explain; an internal monoculture amplifies this. | Pre-registration; adversarial collaborators and reviewers; publish failures alongside successes; report all three CSI constructions and their disagreement. |
-| **Founder-dependence** | A discipline that depends on one person does not survive. | Build toward a self-reproducing community (collaborators, journal, curriculum). |
-| **Funding-integrity compromise** | Funders whose interests are served by destabilization would corrupt the predictions. | Decline such funding; ethics board with real authority at institute stage (charter). |
+| **Credibility collapse from overclaiming** | One uncorrected error of the kind the χ² misreading was could discredit the whole program with the audience it most needs. | Rigor first; corrections made openly; estimated never presented as computed. The November 2026 review is this mitigation in practice. |
+| **Single-author error** | A corpus written and checked by one person carries that person's blind spots. The November 2026 review found a misattributed study and an out-of-date answer key that an outside reader would have caught sooner. | Outside review before further deposits; the adjudication panel; adversarial collaborators; a public issue tracker for corrections. |
+| **Positioning** | Read as "cliodynamics plus a layer," or as a rival to the program it extends, the discipline would be both misdescribed and isolated. | Scrupulous credit; novelty staked narrowly on the three claims. |
+| **Political-perception risk** | The U.S. case can read as partisan, which would taint the science. | Demote contested claims to operationalized sub-hypotheses with stated falsification; maintain even-handedness; a directionally balanced instrument that cannot rank groups (Document 9 §3.3). |
+| **Confirmation / overfitting** | Retrodiction invites fitting the framework to the cases it is meant to explain; a monoculture of one amplifies this. | Pre-registration; outcome-blind baselines; negative controls; adversarial reviewers; failures published alongside successes; all three CSI constructions and their disagreement reported. |
+| **Stale facts in published instruments** | Live quantities move. One answer key in the draft item bank had been overturned by newer data before the draft was five months old. | Every key typed fixed, live, or wave-set; live keys re-adjudicated each wave from a frozen source (Document 10 §2, §7). |
+| **Unsecured namespace** | The domains are unregistered. A third party could register them and receive mail meant for the program, or speak in its name. | Register them; until then publish no address at a domain the program does not own. |
+| **Single-author dependence** | A discipline that depends on one person does not survive that person. | Build toward a self-reproducing community (collaborators, journal, curriculum). |
+| **Funding-integrity compromise** | Funders whose interests are served by destabilization would corrupt the predictions. | Decline such funding; an ethics board with real authority at institute stage (Charter §10). |
 | **Reflexivity** | Public findings alter the system being modeled. | Transparency norm: publish openly so the effect is distributed, not concentrated; treat reflexivity as a measurable coupling (Document 2 §8.1). |
-| **Sustainability / burnout** | A twenty-year program competes with contract work, relocation, and family. | Realistic pacing; financial-stability-first; the canon and Stage-C0 steps are the only true near-term must-dos. |
+| **Sustainability** | A twenty-year program has to be paced to survive its first five. | Realistic pacing; self-funding; the corpus and the Stage C0 steps are the only true near-term necessities. |
 
 ---
 
-## E. Near-term action list (the honest "what now")
+## E. Near-term action list
 
-Reflecting the true Phase-0 starting point, in rough priority order:
+In rough priority order.
 
-1. **Canon: complete and reconciled; building phase begun.** All eight foundational documents are drafted to canon standard, and the first building-phase document (Document 9, the FCR instrument and pre-registration) is drafted. The corpus is internally reconciled (the $\Phi$/$\mathcal{E}$ adoption and the Document 9 cross-references are in place, per Track A). An optional consolidation pass — a unified read-through for cross-references and consistency, and conversion of the flagship paper (#5) and Charter (#1) to submission-grade PDF — can follow once priority is established. *The active priorities are now items 2–5.*
-2. **Establish priority and presence (Stage C0).** `[IN PROGRESS]` — the in-repo package is drafted (web flag, citation metadata, license, deposit packet with ready-to-paste abstracts/keywords/categories). **Next, account-gated (you):** cut a Zenodo release for a DOI and turn on GitHub Pages (same-day flag), then arXiv, namespace, and OSF — see `priority/CHECKLIST.md`. *Low cost, high value, no overclaiming risk.*
-3. **Build the ECI battery (B1).** `[IN PROGRESS]` — the instrument is specified and pre-registered (Document 9), and the Stage-1 deliverable is drafted: the anchor-core item bank (Document 10, with documented ground-truth sourcing and a directional-balance ledger) and the pre-analysis plan (Document 11). The freeze-gating procedures (adjudication rubric + cognitive-pretest protocol) are now drafted too (Document 12), so the entire Stage-1 *paper* specification is complete. Next is execution: convene the panel and run the pretest, then freeze and register the plan (this aligns with Stage C0 — priority). Still the highest-priority empirical investment, and still proceeding on paper, before funding.
-4. **Identify collaborator targets.** Name 3–5 specific people and the specific idea to pitch each (Stage C1), to be approached once the flagship preprint exists.
-5. **Protect the runway.** Keep contract-engineering income stable through any near-term life transitions; CVD work proceeds alongside it.
+1. **Archive the corrected corpus.** `[NOT STARTED]` The canon is complete and reviewed (Track A), but the corrections of November 2026 exist only in the repository. Cut a new tagged release so that the corrected corpus is deposited beside the founding snapshot, with the corrected deposit metadata.
+2. **Finish establishing priority and presence (Stage C0).** `[IN PROGRESS]` Done: the founding deposit, the site, the ORCID. Remaining, in order: register the domains (overdue); correct the metadata of the founding record; submit the two preprints; open the OSF project. See `priority/CHECKLIST.md`.
+3. **Build the ECI battery (B1).** `[IN PROGRESS]` The paper specification of FCR Stage 1 is complete and revised (Documents 9–12). Next is execution: convene the adjudication panel, run the cognitive pretest, then freeze the instrument and register the plan. In parallel, freeze the MOS method and compute its 2024 value, because Prediction 2 resolves on it.
+4. **Find outside readers and a collaborator (Stage C1).** `[NOT STARTED]` Outside review of the corpus comes first; the adjudication panel is the natural first collaboration.
+5. **Keep the pace sustainable.** The steps above are the only near-term necessities; nothing else is urgent.
 
 ---
 
 ## F. Update protocol
 
-At the end of each working session: (1) update every status marker; (2) log newly completed items with their date in the relevant track; (3) re-sequence Tracks B and C if reality has changed the dependencies or priorities; (4) record any new open problem in Document 2 §11 and reference it here; (5) bump this document's version and "last updated" date.
+Whenever this map is revised: (1) update every status marker; (2) log newly completed items with their date in the relevant track; (3) re-sequence Tracks B and C if reality has changed the dependencies or priorities; (4) record any new open problem in Document 2 §11 and reference it here; (5) bump this document's version and "last updated" date.
 
-*Living document. Version 0.6, June 2026. The map will be wrong in detail within weeks — that is expected. Its job is to keep the program honest about where it is and disciplined about what comes next.*
+| Version | Date | Change |
+|---------|------|--------|
+| 0.1–0.6 | June 2026 | Drafted with the corpus; extended through the building-phase documents and the Stage C0 package |
+| 0.7 | November 2026 | Rewritten as a public document; statuses corrected against what had actually been done; the November 2026 review logged; MOS pipeline, control-set enlargement, and a corrected release added as tasks |
+
+*Living document. Version 0.7, November 2026. The map will be wrong in detail within weeks — that is expected. Its job is to keep the program honest about where it is and disciplined about what comes next.*

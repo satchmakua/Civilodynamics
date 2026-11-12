@@ -1,5 +1,8 @@
 cff-version: 1.2.0
-message: "If you use or cite Civilodynamics, please cite the canonical corpus as below."
+message: >-
+  To cite Civilodynamics, cite the canonical corpus as below. The DOI is the
+  concept DOI, which always resolves to the latest archived version; the
+  founding snapshot of 26 June 2026 has its own DOI, listed under identifiers.
 title: "Civilodynamics: Canonical Corpus"
 abstract: >-
   Civilodynamics is the quantitative science of how civilizations maintain
@@ -17,11 +20,19 @@ authors:
     given-names: Satchel
     orcid: "https://orcid.org/0009-0001-9871-5607"
     affiliation: "Civilodynamics Initiative"
-version: "2026.06"
-date-released: "2026-06-26"
+version: "2026.11"
+date-released: "2026-11-11"
 license: CC-BY-4.0
 repository-code: "https://github.com/satchmakua/Civilodynamics"
-doi: "10.5281/zenodo.20917966"
+url: "https://satchmakua.github.io/Civilodynamics/"
+doi: "10.5281/zenodo.20917965"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20917965"
+    description: "Concept DOI: all versions; resolves to the latest archived version"
+  - type: doi
+    value: "10.5281/zenodo.20917966"
+    description: "Version DOI: founding snapshot v2026.06, deposited 26 June 2026"
 keywords:
   - civilodynamics
   - cliodynamics
@@ -32,3 +43,18 @@ keywords:
   - epistemic coherence
   - poliform
   - quantitative history
+preferred-citation:
+  type: report
+  title: "Civilodynamics: Canonical Corpus"
+  authors:
+    - family-names: Hamilton
+      given-names: Satchel
+      orcid: "https://orcid.org/0009-0001-9871-5607"
+      affiliation: "Civilodynamics Initiative"
+  year: 2026
+  month: 11
+  version: "2026.11"
+  doi: "10.5281/zenodo.20917965"
+  url: "https://github.com/satchmakua/Civilodynamics"
+  institution:
+    name: "Civilodynamics Initiative"

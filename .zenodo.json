@@ -1,0 +1,30 @@
+{
+  "title": "Civilodynamics: Canonical Corpus",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "description": "<p>Civilodynamics is the quantitative science of how civilizations maintain coherence, accumulate stress, approach phase transitions, and reorganize, with particular attention to the role of information architecture in accelerating or damping these dynamics. It extends, and does not replace, the cliodynamics program of Turchin and colleagues, staking its distinctness on three narrow claims: the epistemic/information layer as a first-class state variable; the integration of recurrent social forms with theoretical morphospace (the poliform framework); and real-time measurement.</p><p>The corpus comprises a Foundational Charter, mathematical and methodological foundations, poliform theory, a measurement program and data architecture, a flagship U.S. case study with registered predictions, a retrodiction casebook and pre-registration, a lexicon and ontology, a living program map, and the first building-phase documents: the Factual Consensus Rate instrument, its item bank, its pre-analysis plan, and the procedures that take it to freeze.</p><p>At this stage the framework is a coherent, falsifiable skeleton. No index has been computed end-to-end against data, no retrodiction has been scored, and reported quantities are illustrative estimates, labeled as such. Corrections to earlier versions are recorded in each document's revision log.</p>",
+  "creators": [
+    {
+      "name": "Hamilton, Satchel",
+      "affiliation": "Civilodynamics Initiative",
+      "orcid": "0009-0001-9871-5607"
+    }
+  ],
+  "keywords": [
+    "civilodynamics",
+    "cliodynamics",
+    "structural-demographic theory",
+    "complex systems",
+    "phase transitions",
+    "Civilizational Stress Index",
+    "Epistemic Coherence Index",
+    "poliform",
+    "morphospace",
+    "quantitative history",
+    "political instability",
+    "pre-registration"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "eng"
+}

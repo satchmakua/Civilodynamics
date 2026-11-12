@@ -1,6 +1,6 @@
 # Civilodynamics — Retrodiction Casebook
 
-**Canonical Corpus, Document 6 of 8 · Working Draft v0.1 · June 2026**
+**Canonical Corpus, Document 6 of 8 · Working Draft v0.2 · June 2026, amended November 2026 (before any computation)**
 **Satchel Hamilton · Civilodynamics Initiative**
 
 > **Status and role.** This document is the discipline's validation instrument: the set of historical cases against which the framework's core empirical claim — that elevated Civilizational Stress precedes phase transitions — is to be tested, against the charter's bar (Document 1 §6). The method is specified in **Document 2** and operationalized in **Document 4**; this document supplies the cases, the scoring design, and the pre-registered quantitative test.
@@ -24,12 +24,21 @@ The casebook is designed around four safeguards against this hazard, and the des
 
 For each case, the procedure is:
 
-1. **Define the window and the unit.** State the society and the time window, resolving the unit-of-analysis question (Document 3 §7) explicitly for the case.
+1. **Define the window, the unit, and the baseline.** State the society and the time window, resolving the unit-of-analysis question (Document 3 §7) explicitly for the case, and set the baseline by the mechanical rule stated below — not by judgment.
 2. **Assemble structural data.** Populate the stress readout $\mathbf{u}(t)$ (and, where possible, the configuration vector $\mathbf{S}$) from the historical record, with sources and uncertainty (Document 4).
 3. **Compute blind.** Run the Document 4 pipeline to produce a CSI trajectory with bands, without reference to the known outcome.
 4. **Tag the tier.** Locating the society in poliform morphospace near the relevant boundary is **Tier 1** (estimable from structural data); reconstructing the *temporal approach* to the boundary requires a longitudinal trajectory and is **Tier 2** and data-intensive (Document 2 §3). Most historical CSI *trajectories* are therefore Tier-2-demanding and currently illustrative.
 5. **Score against pre-registered criteria** (§5), on both sensitivity and specificity.
 6. **Note in-sample contamination.** Cases used to *build* the parent structural-demographic theory are weaker tests than genuinely out-of-sample cases; this is flagged per case.
+
+> **Amendment (November 2026, before any computation) — the baseline must be blind too.** The index measures departure from a baseline, so whoever chooses the baseline chooses much of the result. A baseline picked as "the calm before the crisis" uses knowledge of the outcome: it guarantees that stress rises toward an event already known to have happened, and it defeats the blind computation of step 3 before it starts. The original protocol was silent on this. The baseline is therefore set by a rule that makes no reference to any outcome and is applied identically to every case, transition and control alike.
+>
+> - **Primary rule — a trailing baseline.** For every year in a case's window, the baseline is the interval of fixed length ending a fixed lag before that year. The length and the lag are set once, in the computation plan, for all cases. Stress then means "how far the present sits from the generation before," computed the same way everywhere.
+> - **Sensitivity — a fixed baseline.** A single interval of the same length, ending the same lag before the *first* year of the case's pre-registered window. This too is outcome-blind, because the windows are fixed in §3–§4.
+> - **Short records.** Where the record cannot supply a baseline of the required length, the shortfall is reported, and the decision to compute or drop the case is made before computation.
+> - **The cost, stated.** A trailing baseline absorbs slow deterioration, so it can miss a long, gradual build-up. It is the conservative choice. That cost is accepted for the sake of blindness and is disclosed with every result.
+>
+> The U.S. baseline of 1948–1973 (Documents 4 and 5) predates this rule and was chosen by judgment. It is retained for the contemporary analysis, where it is defended on its own terms; but in the *retrodiction* test the U.S. case is computed under the mechanical rule like every other.
 
 **Current status:** Step 3 has not been performed for any case. Sections 3–4 are illustrative sketches against which the eventual blind computation will be compared.
 
@@ -104,9 +113,27 @@ The qualitative "expected behavior" column states what the framework *predicts*;
 ### 5.2 The pre-registered quantitative test (recorded June 2026, before computation)
 
 - **Computation is blind to outcome**, by the Document 4 pipeline, for all nine cases.
-- **Discrimination metric.** Treating "transition within a defined horizon" as the target, compute the discriminative performance of the CSI (e.g., the area under the ROC curve, AUC, for CSI-at-time-$t$ predicting transition-within-horizon across positive and control cases), with a **pre-specified target threshold** to be fixed in the computation plan and not adjusted afterward.
+- **Discrimination metric.** Treating "transition within a defined horizon" as the target, compute the discriminative performance of the CSI (e.g., the area under the ROC curve, AUC, for CSI-at-time-$t$ predicting transition-within-horizon across positive and control cases), with a **pre-specified target threshold** to be fixed in the computation plan and not adjusted afterward. The unit of inference and the chance levels against which that threshold must be set are fixed in §5.3.
 - **Two-sided bar.** The charter's 80% standard is interpreted as a bar on *discrimination*: the framework must both flag the positive cases (sensitivity) **and** not flag the controls (specificity). Hitting the transitions while also flagging the controls is a failure, not a success.
 - **Publication commitment.** The result is published whether or not it confirms the framework, with the blind computations and code released (Document 4 §9). A failed retrodiction set falsifies the core empirical claim (charter §6) and is reported as such.
+
+### 5.3 Statistical power — what nine cases can and cannot show *(added November 2026, before any computation)*
+
+The design of §5.2 is two-sided, but with so few cases it is close to powerless. That has to be stated before the result exists, not discovered after it.
+
+**The unit of inference is the case.** Years within a case are not independent observations. Each case therefore contributes one pre-specified summary — the maximum of its headline CSI over its pre-registered window, under the trailing baseline of §2 — and discrimination is computed across cases, not across case-years.
+
+**The arithmetic.** With six positive cases and three controls there are $\binom{9}{3} = 84$ equally likely orderings under the null hypothesis that the index is unrelated to outcome. Perfect separation of positives from controls has probability $1/84 \approx 0.012$. An AUC of at least 0.8 — at least 15 of the 18 positive–control pairs correctly ordered — has probability $7/84 \approx 0.083$. So the charter's 80% bar, read as an AUC, would be cleared by chance about one time in twelve. Reaching $p < 0.05$ takes at least 16 of the 18 pairs (AUC ≥ 0.89).
+
+**The honest set is smaller still.** Two positives are near-in-sample (Rome and the United States, §3), and one control is the baseline anchor, which the index is constructed to score low (§4.3). The genuinely out-of-sample test is four positives against two controls: $\binom{6}{2} = 15$ orderings. Even *perfect* separation then has probability $1/15 \approx 0.067$, and cannot reach conventional significance.
+
+**Consequences, fixed now.**
+
+1. The nine-case result is reported as a **demonstration of the protocol with a stated chance level**, not as validation, whatever it shows. A clean separation would be encouraging. It would not be evidence at the strength the charter's falsifiability conditions require.
+2. The control set is **enlarged before any computation**. The binding constraint is controls, not positives: with eight out-of-sample controls against four out-of-sample positives, perfect separation has probability $1/\binom{12}{4} \approx 0.002$, and an informative two-sided test becomes possible. Candidate controls are listed below. Each must be vetted for data availability and for whether it is in fact a non-transition, and the final set is fixed in the computation plan before the first case is computed.
+3. The target threshold of §5.2 is set against these chance levels, in the computation plan, and not afterward.
+
+*Candidate additional controls (to be vetted; not yet registered):* the United States in the Great Depression (1929–1941); Britain in the 1970s; France around 1968; Italy in the "years of lead" (c. 1969–1982); Japan in its post-1990 stagnation; Sweden in its early-1990s financial crisis. Each is a period of pronounced economic or political stress in which the regime persisted. They cluster in the twentieth-century West because that is where stress data are densest. That is a limitation — the positives span two millennia — and the vetting must weigh it.
 
 ## 6. Safeguards against confirmation bias (consolidated)
 
@@ -119,6 +146,16 @@ It is not validation. As of this draft, no case has been computed, and the quali
 ## 8. Closing
 
 The Retrodiction Casebook is the instrument that will either earn the framework its empirical credibility or take it away. Its design reflects the recognition that retrodicting known outcomes is easy and therefore nearly worthless unless it is done blind, pre-registered, and — above all — tested against negative controls that the framework could fail. The positive cases (Rome, the French Revolution, Weimar, the Soviet collapse, 1848, the United States) ask whether elevated stress precedes transition; the negative controls (the Progressive-Era correction, the British release valve, the mid-century baseline) ask the harder and more important question of whether the framework can tell the difference between a society that transitions and one that is merely stressed. A framework that passes the first test and fails the second has predicted nothing. The pre-registered quantitative test of §5 is where that verdict will be rendered.
+
+## 9. Amendment log
+
+Each amendment below was made before any case was computed.
+
+| Version | Date | Section | Amendment | Reason |
+|---------|------|---------|-----------|--------|
+| 0.1 | June 2026 | — | Protocol, cases, controls, and test registered | — |
+| 0.2 | November 2026 | §2 | Baseline set by an outcome-blind mechanical rule (trailing baseline; fixed baseline as sensitivity) | A baseline chosen with knowledge of the outcome defeats blind computation |
+| 0.2 | November 2026 | §5.3 | Unit of inference fixed as the case; chance levels of the nine-case design stated; commitment to enlarge the control set before computation | With six positives and three controls an 80% AUC arises by chance about one time in twelve |
 
 ---
 

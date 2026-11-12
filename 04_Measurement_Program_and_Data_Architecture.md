@@ -1,6 +1,6 @@
 # Civilodynamics — Measurement Program and Data Architecture
 
-**Canonical Corpus, Document 4 of 8 · Working Draft v0.1 · June 2026**
+**Canonical Corpus, Document 4 of 8 · Working Draft v0.2 · June 2026, revised November 2026**
 **Satchel Hamilton · Civilodynamics Initiative**
 
 > **Status and role.** This document operationalizes the abstract measures defined in **Document 2 (Mathematical & Methodological Foundations)** — it is the manual that says, for each index, exactly which variables are used, where the data come from, how far back they reach, what is broken about them, and how the index is assembled and released. It is the dependency for **Document 5** (the U.S. case study) and **Document 6** (the Retrodiction Casebook), both of which draw their numbers from the protocols specified here. It does **not** re-derive any mathematics; where construction is concerned it cites Document 2 and supplies the operational detail. It is a working draft: the protocols are specified, but with one minor exception nothing in the corpus has yet been computed against data, and all illustrative values elsewhere remain estimates.
@@ -37,6 +37,10 @@ These rules bind every measurement in the corpus. They are drawn from Document 2
 
 **Provenance and versioning.** Source data are archived at the vintage used (a frozen copy), because providers revise series retroactively. Index versions are tied to data vintages so that any published figure can be regenerated exactly.
 
+**Common unit.** The configuration vector and the stress readout are computed for the same, explicitly stated unit — by default the polity as partitioned in the source database for historical work, and the nation-state for contemporary work — and every published index names its unit. Wherever an alternative partitioning is defensible, results are checked for sensitivity to it (Document 3 §3.2, §7.2).
+
+**No shared variables across the two layers.** Several stress observables are baseline deviations of configuration axes (Document 3 §2.2). The two layers are therefore never pooled into one index or one distance, and in any test of the bridging hypothesis the distance-to-boundary is computed from configuration variables that do not enter the stress index under test (Document 2 §1.3). A correlation between two quantities built from the same series is arithmetic, not evidence.
+
 ---
 
 ## 2. The data estate
@@ -55,8 +59,9 @@ The empirical foundation has two layers: a **historical baseline layer** (deep t
 | Pew trust / media-consumption series | Trust; pre-digital media overlap | Trust ~1958–present; media surveys biennial, multi-decade | Instrument and mode changes over time |
 | General Social Survey (GSS) | Social capital, legal-fairness, attitudes | 1972–present | Biennial; no mid-century coverage |
 | ANES | Affective polarization (thermometers), threat | Thermometers ~1964/1978–present | Sparse early; mode effects |
-| BLS CES / OEWS | Real wages; EOI position-side inputs | CES ~1939/1947–present; OEWS ~1988–present | Occupational reclassifications (2000, 2010 SOC) create discontinuities |
-| NCES / Survey of Earned Doctorates | EOI credential-side inputs | SED ~1957–present | Field classifications change over time |
+| BLS CES / OEWS | Real average earnings; EOI position-side inputs | CES earnings: manufacturing 1939–, total private 1964–; OEWS ~1988–present | CES reports averages, not quantiles; occupational reclassifications (2000, 2010 SOC) create discontinuities |
+| Census CPS ASEC historical income tables | Family income by quintile (the distributional real-income series) | 1947–present | Family rather than individual income; top-coding and survey-redesign breaks |
+| NCES (IPEDS completions); NCSES Survey of Earned Doctorates | EOI credential-side inputs | SED 1958–present | Field classifications change over time |
 | ABA enrollment/conferral data | EOI legal-domain inputs | Multi-decade | Definitional changes in reporting |
 | Federal Reserve DFA | Household wealth by quantile | 1989–present | No mid-century coverage |
 | MIT Election Lab / Census | Geographic sorting; demographic blocks | Elections 1976–present; Census long-run | Precinct/county boundary changes |
@@ -84,20 +89,20 @@ The six stress blocks and their operationalized variables. (Notation follows Doc
 
 | Block | Variable | Operationalization | Source | Approx. coverage |
 |-------|----------|--------------------|--------|------------------|
-| **Economic** $\sigma_{\mathrm{econ}}$ | Real wage growth | 5-yr rolling mean, bottom two quintiles, CPI-deflated (sign-flipped) | BLS CES; BLS CPI | ~1947– |
+| **Economic** $\sigma_{\mathrm{econ}}$ | Real earnings growth (lower half) | 5-yr rolling mean of real income for the bottom two quintiles of families, CPI-deflated (sign-flipped); real average hourly earnings of production and nonsupervisory workers as the wage-side check | Census CPS ASEC historical tables; BLS CES; BLS CPI | Quintiles 1947–; CES total private 1964– |
 | | Wealth concentration | Top-1% net wealth share ÷ baseline mean | WID; Fed DFA | WID ~1913–; DFA 1989– |
-| | Mobility deficit | $1-$ (observed intergen. rank corr. ÷ baseline) | Opportunity Insights | Modern cohorts |
+| | Mobility deficit | $1-$ (absolute-mobility rate ÷ baseline), the rate being the share of children out-earning their parents at age 30; rank-based persistence as a secondary series | Opportunity Insights (Chetty et al. 2017) | Birth cohorts 1940–1984 |
 | | Fiscal stress | Federal debt/GDP vs. baseline | IMF HPDD; CBO | Long-run |
-| **Elite** $\sigma_{\mathrm{elite}}$ | Elite Overproduction Index | See §6 | ABA; NCES/SED; BLS OEWS | Mixed |
+| **Elite** $\sigma_{\mathrm{elite}}$ | Elite Overproduction Index | See §6 | ABA; NCES; NCSES SED; BLS OEWS | Mixed |
 | | Elite fragmentation | Variance in elite-tier donations across parties | FEC / DIME | ~1979– |
 | **Legitimacy** $\sigma_{\mathrm{leg}}$ | Institutional trust composite | Mean trust across consistently-tracked institutions (sign-flipped) | Gallup; Pew | Gallup 1973– |
 | | Legal-fairness gap | Trust gap, legal system, top vs. bottom income quintile | GSS; Pew | GSS 1972– |
 | **Cohesion** $\sigma_{\mathrm{coh}}$ | Geographic sorting | Population-weighted mean county partisan lean | MIT Election Lab; Census | 1976– (reconstructable earlier) |
 | | Intergroup threat | Perceived economic/cultural out-group threat | ANES; Pew | Modern |
 | **Epistemic** $\sigma_{\mathrm{epi}}$ | Media Overlap Score | $1-\mathrm{JSD}$ of L/R news-source distributions | Reuters DNR; AllSides | ~2012– (recon. to ~2000) |
-| | Factual Consensus Rate | Cross-partisan agreement on a verifiable battery | **New survey — §5** | **To be built** |
-| **Demographic** $\sigma_{\mathrm{dem}}$ | Youth cohort pressure | Pop. 18–29 ÷ working-age, normalized | Census ACS | Long-run |
-| | Rural-urban divergence | Urban/rural median income ratio, normalized | Census ACS; ERS | Long-run |
+| | Factual Consensus Rate | Cross-partisan agreement on a verifiable battery | **New survey — §5; Document 9** | **To be built** |
+| **Demographic** $\sigma_{\mathrm{dem}}$ | Youth cohort pressure | Pop. 18–29 ÷ working-age, normalized | Census population estimates; ACS | Long-run |
+| | Rural-urban divergence | Urban/rural median income ratio, normalized | Census (decennial; CPS); ACS; ERS | Long-run |
 
 This is the variable set behind all three CSI constructions. The epistemic block is the weak point: one component (MOS) is reconstructable to ~2000 but estimated before ~2012, and the other (FCR) does not yet have an instrument at all.
 
@@ -117,14 +122,14 @@ The mathematics is in Document 2 §4; this is the recipe. The CSI is computed in
 
 | Variable | Mid-century coverage? | Assignment |
 |----------|------------------------|------------|
-| Real wage growth | Yes | Baseline $\Sigma_{\mathcal B}$ |
+| Real earnings growth (lower half) | Yes (Census quintile series, 1947–) | Baseline $\Sigma_{\mathcal B}$ |
 | Wealth concentration | Yes (WID) | Baseline $\Sigma_{\mathcal B}$ |
 | Fiscal stress | Yes | Baseline $\Sigma_{\mathcal B}$ |
 | Youth cohort pressure | Yes (Census) | Baseline $\Sigma_{\mathcal B}$ |
 | Rural-urban divergence | Yes (Census) | Baseline $\Sigma_{\mathcal B}$ |
 | Geographic sorting | Partial (reconstructable) | Baseline $\Sigma_{\mathcal B}$, flagged |
 | EOI (credential side) | Partial (SED from ~1957) | Baseline $\Sigma_{\mathcal B}$, flagged |
-| Mobility deficit | No (modern cohorts) | Modern extension |
+| Mobility deficit | Borderline (the first cohorts reach age 30 in 1970) | Modern extension (anchored at baseline tail) |
 | Elite fragmentation | No (DIME ~1979–) | Modern extension |
 | Institutional trust | Borderline (Gallup 1973) | Modern extension (anchored at baseline tail) |
 | Legal-fairness gap | No (GSS 1972–) | Modern extension |
@@ -137,7 +142,7 @@ The baseline $\Sigma_{\mathcal B}$ is estimated only over the upper block; the m
 **Step 5 — Compute all three indices and report them together.**
 - $\textit{CSI}_{\mathrm{lin}}$ (equal weights default; calibrated and theory-weighted variants as sensitivity).
 - $\textit{CSI}_{\mathrm{nl}}$ (pre-registered interaction terms).
-- $\textit{CSI}_{\mathrm{M}}$ over the coverage-restricted vector, with thresholds set from the **$\chi^2_p$ distribution** (or the finite-sample **Hotelling-$F$** when $\boldsymbol\mu_{\mathcal B},\Sigma_{\mathcal B}$ are estimated), **not** the $2\sigma/3\sigma$ rule (Document 2 §4.4). Report multivariate-normality diagnostics; if normality fails, set thresholds from the empirical baseline distribution.
+- $\textit{CSI}_{\mathrm{M}}$ over the coverage-restricted vector, with thresholds set from the **$\chi^2_p$ distribution** (or the finite-sample **Hotelling-$F$** when $\boldsymbol\mu_{\mathcal B},\Sigma_{\mathcal B}$ are estimated), **not** the $2\sigma/3\sigma$ rule (Document 2 §4.4). Report multivariate-normality diagnostics; if normality fails, set thresholds from the empirical baseline distribution. The dimension $p$ must sit well below the *effective* number of baseline observations. For the U.S. baseline — 26 serially correlated annual observations — that means the block level or a few principal components; if more dimensions are used, the covariance is estimated with shrinkage and the thresholds come from a block bootstrap of the baseline (Document 2 §4.4). The dimension and the effective sample size are reported with the index.
 
 **Headline scalar.** Report a **per-dimension-normalized** quantity (e.g., $\textit{CSI}_{\mathrm{M}}/\sqrt{p}$ or the mean $z$) as the headline, because it is interpretable across differing $p$ and does not invite the $\sigma$-rule misreading.
 
@@ -149,19 +154,19 @@ The baseline $\Sigma_{\mathcal B}$ is estimated only over the upper block; the m
 
 The ECI is the discipline's distinctive contribution and its highest-priority empirical build (charter §5). It operationalizes the information axis $I$ in $\mathbf{S}$ and supplies $\sigma_{\mathrm{epi}}$ in $\mathbf{u}$. It has three components; the second requires new infrastructure and is specified at length.
 
-$$\textit{ECI}(t) = g\big(\textit{MOS}(t),\; \textit{FCR}(t),\; \textit{NCI}(t)\big),$$
+$$\textit{ECI}(t) = \Gamma\big(\textit{MOS}(t),\; \textit{FCR}(t),\; \textit{NCI}(t)\big),$$
 
-with $g$ a normalized aggregate (equal-weight mean as default, weights pre-registered). All three components are bounded so that higher means *more* coherence; the stress observable $\sigma_{\mathrm{epi}}$ is the sign-flipped, baseline-normalized ECI.
+with $\Gamma$ a normalized aggregate (equal-weight mean as default, weights pre-registered). All three components are bounded so that higher means *more* coherence; the stress observable $\sigma_{\mathrm{epi}}$ is the sign-flipped, baseline-normalized ECI.
 
 ### 5.1 Media Overlap Score (MOS)
 
-$\textit{MOS}(t) = 1 - \mathrm{JSD}(P_A, P_B)$, the Jensen–Shannon divergence between the information-source distributions of two communities (partisan identification as the default partition), bounded $[0,1]$. **Sources:** Reuters DNR microdata and AllSides audience data from ~2012; Pew's long-run biennial media-consumption surveys for pre-digital reconstruction to ~2000 (interpolated, hence **estimated**). **Known issues:** self-reported consumption; the partition choice (partisan) is one of several defensible choices and should be sensitivity-tested.
+$\textit{MOS}(t) = 1 - \mathrm{JSD}(P_A, P_B)$: one minus the Jensen–Shannon divergence between the information-source distributions of two communities (partisan identification as the default partition). The divergence is computed with base-2 logarithms, which bounds it in $[0,1]$, so $\textit{MOS}=1$ for identical source distributions and $0$ for disjoint ones. **Sources:** Reuters DNR microdata and AllSides audience data from ~2012; Pew's long-run biennial media-consumption surveys for pre-digital reconstruction to ~2000 (interpolated, hence **estimated**). **Known issues:** self-reported consumption; the partition choice (partisan) is one of several defensible choices and should be sensitivity-tested.
 
 ### 5.2 Factual Consensus Rate (FCR) — the new instrument
 
 No existing survey tracks cross-partisan agreement on *verifiable* propositions consistently over time. Building one is the single most valuable, and most feasible, near-term metrological investment in the program. The conceptual specification below is operationalized into a full fieldable instrument and pre-registration in **Document 9**. Specification:
 
-**Object.** The fraction of a standing battery of verifiable factual propositions on which agreement holds across partisan (and other) subgroups — operationally, the share of items for which the cross-group gap in the rate of correct belief falls below a pre-registered threshold (and/or a continuous index of the mean cross-group gap).
+**Object.** The fraction of a standing battery of verifiable factual propositions on which agreement holds across partisan (and other) subgroups — operationally, the share of items for which the cross-group gap in the rate of correct belief falls below a pre-registered threshold (and/or a continuous index of the mean cross-group gap). Both forms are computed over the charged-but-settled items only, with a gap estimator corrected for sampling noise; the neutral anchors supply the noise floor and do not enter the statistic (Document 9 §2).
 
 **Item design.** Items must be **verifiable and settled**, not values or contested interpretation. The battery mixes:
 - *Neutral anchors* — uncontroversial empirical facts (basic civic, scientific, and numerical facts) that establish a baseline of measurement noise.
@@ -176,7 +181,7 @@ No existing survey tracks cross-partisan agreement on *verifiable* propositions 
 
 ### 5.3 Network Connectivity Index (NCI)
 
-$\textit{NCI}(t) = E_{\mathrm{cross}} / (E_{\mathrm{cross}} + E_{\mathrm{within}})$ — the share of cross-community ties in information-sharing networks, with community structure detected via modularity; $0.5$ balanced, $\to 0$ hermetic. **Sources:** social-platform research data where available (with the access caveats of §2.2 — the program treats this as supplementary, not load-bearing) and academic computational-social-science datasets. **Known issues:** platform-specific; access instability post-2023; sampling and bot contamination.
+$\textit{NCI}(t) = E_{\mathrm{cross}} / (E_{\mathrm{cross}} + E_{\mathrm{within}})$ — the share of cross-community ties in information-sharing networks; $\to 0$ hermetic. **Normalization.** Under random mixing the expected cross-tie share is $1-\sum_i s_i^2$ for community shares $s_i$ — $0.5$ only for two communities of equal size — so the reported index is the raw share divided by that expectation, capped at 1. **Partition.** Communities are fixed exogenously, by the same partition the MOS uses. Modularity-detected communities are reported only as an exploratory check: communities found by maximizing modularity have few cross-ties by construction, and their number depends on a resolution parameter. **Sources:** social-platform research data where available (with the access caveats of §2.2 — the program treats this as supplementary, not load-bearing) and academic computational-social-science datasets. **Known issues:** platform-specific; access instability post-2023; sampling and bot contamination.
 
 ### 5.4 ECI build sequence
 
@@ -193,14 +198,14 @@ A worked example of a fully specified component index. The EOI is the ratio of c
 | Domain | Numerator | Denominator | Source |
 |--------|-----------|-------------|--------|
 | Law | JD conferrals / 1L enrollment | Lawyer openings (projected + JOLTS) | ABA; BLS OEWS |
-| Academia | PhD conferrals by field | Tenure-track openings | NCES/SED; AHA & MLA jobs reports |
+| Academia | Research-doctorate conferrals by field | Tenure-track openings | NCSES SED; AHA and MLA jobs reports |
 | Finance | Relevant graduate conferrals | Finance/analyst positions | NCES; BLS OEWS |
 | Management | MBA conferrals | Management openings | NCES; BLS OEWS |
 | Media | Journalism/comms degrees | Newsroom employment | NCES; Pew newsroom-employment data |
 
 **Aggregation.** Normalize each domain ratio to its baseline, then aggregate (geometric mean of normalized domain ratios, to avoid one domain dominating), producing a single baseline-relative EOI.
 
-**Known issues, stated.** BLS occupational classification revisions (2000 and 2010 SOC) create discontinuities in the denominators that must be bridged explicitly. Degree-field taxonomies in NCES/SED also change. Until a purpose-built protocol harmonizes these, the EOI is **estimated**, not computed. A dedicated EOI protocol — harmonized occupational and degree classifications, with a documented bridging method — is a defined task in the program (Document 8, and Document 2 §11.6).
+**Known issues, stated.** BLS occupational classification revisions (2000 and 2010 SOC) create discontinuities in the denominators that must be bridged explicitly. Degree-field taxonomies in the NCES and SED series also change. Until a purpose-built protocol harmonizes these, the EOI is **estimated**, not computed. A dedicated EOI protocol — harmonized occupational and degree classifications, with a documented bridging method — is a defined task in the program (Document 8, and Document 2 §11.6).
 
 ---
 
@@ -211,10 +216,10 @@ For morphospace work (basin location and depth, Tier 1), the six constraint axes
 | Axis | Sub-components | Principal sources | Coverage / gap |
 |------|----------------|-------------------|----------------|
 | **Energy** $E$ | $e_{\mathrm{pc}}$, EROI, $H_E$ | Smil (2017); biophysical-economics (Hall et al.); IEA for modern | Deep-history values are estimates |
-| **Coordination** $C$ | $N$, $h$, $r$, $\rho_{\mathrm{inst}}$ | Seshat; V-Dem/Polity/QoG; Dunbar/Zhou literature for $r$ | $h$ and $\rho_{\mathrm{inst}}$ require coding conventions |
-| **Information** $I$ | $B$, $\lambda$, $V$, $H_I$ | Media-history literature; ECI components for modern | **Under-served historically — priority gap** |
-| **Extraction** $X$ | $s$, $\boldsymbol\mu$, $G$, $f$, $r_{\mathrm{rent}}$ | WID; fiscal-history (fiscal capacity ~1500 CE+); political-economy literature | $r_{\mathrm{rent}}$ needs a stable operational definition |
-| **Trust** $T$ | $\tau_{\mathrm{inst}}$, $\tau_{\mathrm{str}}$, $\rho_{\mathrm{clan}}$, $c$ | WVS, Edelman (modern); historical proxies (credit-based long-distance trade, compliance rates) | **Under-served historically — priority gap** |
+| **Coordination** $C$ | $N$, $\ell$, $r$, $\rho_{\mathrm{inst}}$ | Seshat; V-Dem/Polity/QoG; Dunbar/Zhou literature for $r$ | $\ell$ and $\rho_{\mathrm{inst}}$ require coding conventions |
+| **Information** $I$ | $b$, $\lambda$, $\zeta$, $H_I$ | Media-history literature; ECI components for modern | **Under-served historically — priority gap** |
+| **Extraction** $X$ | $s$, $\boldsymbol{\xi}$, $G$, $f$, $r_{\mathrm{rent}}$ | WID; fiscal-history (fiscal capacity ~1500 CE+); political-economy literature | $r_{\mathrm{rent}}$ needs a stable operational definition |
+| **Trust** $T$ | $\tau_{\mathrm{inst}}$, $\tau_{\mathrm{str}}$, $\rho_{\mathrm{clan}}$, $\kappa$ | WVS, Edelman (modern); historical proxies (credit-based long-distance trade, compliance rates) | **Under-served historically — priority gap** |
 | **Ecology** $K$ | CC, $\varepsilon$, $D_{\mathrm{clim}}$, $D_{\mathrm{dis}}$ | Paleoclimate, agronomic, epidemiological-history literatures | Deep-history values are estimates |
 
 The two priority gaps — the information ($I$) and trust ($T$) axes in deep history — are exactly the dimensions on which Civilodynamics' distinctiveness rests, and closing them is a defined data task (Document 2 §11.6; Document 8). The configuration measurement supports Tier-1 work (locate basins, test the sparse-clustered-occupancy prediction). Tier-2 dynamical reconstruction additionally requires *longitudinal* per-polity sequences (§1, Document 2 §3).
@@ -247,6 +252,21 @@ Every published index follows the same release discipline:
 - **Versioning.** Index versions are tied to data vintages so any published figure can be reproduced exactly.
 
 This discipline is not bureaucratic overhead; it is the operational form of the claim that Civilodynamics is a science. An index that cannot be regenerated from disclosed inputs by disclosed code is, by the standards of this document, not yet a result.
+
+---
+
+## 10. Revision log
+
+| Version | Date | Change | Reason |
+|---------|------|--------|--------|
+| 0.1 | June 2026 | First canonical version | — |
+| 0.2 | November 2026 | §1: common-unit rule; no shared variables across the two layers | Documents 2 and 3 cited obligations this document did not yet state |
+| 0.2 | November 2026 | §2.1, §3, §4: lower-half earnings redefined on the Census quintile series, with CES as the wage-side check | CES reports average earnings and has no quintiles |
+| 0.2 | November 2026 | §3, §4: mobility deficit redefined on absolute mobility | As written (one minus a ratio of rank correlations) the measure *fell* as mobility worsened |
+| 0.2 | November 2026 | §2.1, §3, §6: the Survey of Earned Doctorates attributed to NCSES; its series start given as 1958 | It is not an NCES survey |
+| 0.2 | November 2026 | §4: dimension of $\textit{CSI}_{\mathrm{M}}$ tied to the effective baseline sample size | Document 2 §4.4 |
+| 0.2 | November 2026 | §5: aggregate written $\Gamma$; MOS logarithm base stated; FCR computed over charged items only; NCI normalized and computed on an exogenous partition | Documents 2 §5 and 9 §2 |
+| 0.2 | November 2026 | §7: sub-component symbols $\ell$, $b$, $\zeta$, $\boldsymbol{\xi}$, $\kappa$ | Document 2 §2.1 |
 
 ---
 

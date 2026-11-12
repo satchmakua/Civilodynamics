@@ -1,7 +1,7 @@
 # Structural Preconditions of Anti-Systemic Political Emergence
 ### A Civilodynamic Analysis of the United States, 2000–2024 (Working Paper No. 1, revised)
 
-**Canonical Corpus, Document 5 of 8 · Working Paper No. 1, Revision 2.0 · June 2026**
+**Canonical Corpus, Document 5 of 8 · Working Paper No. 1, Revision 2.1 · June 2026, corrected November 2026**
 **Satchel Hamilton · Civilodynamics Initiative**
 
 > **Status and role.** This is the flagship empirical application of Civilodynamics: a structural analysis of the United States over 2000–2024 and the first registered set of prospective predictions. It is a *revision* of Working Paper No. 1 (April 2026). The theoretical framework and all mathematics are specified in **Documents 1, 2, and 4**, to which this paper defers; this paper applies them. Three things in this revision differ materially from the original and are stated up front because they bear on how the paper should be read:
@@ -11,6 +11,8 @@
 > 3. **The contested causal and political claims are demoted from assertions to explicitly operationalized, falsifiable sub-hypotheses**, each with a stated way to be wrong (§4), and the paper's posture toward candidate-centered and contingency-based alternative explanations is even-handed.
 >
 > The five prospective predictions (§7) were registered in April 2026 and are carried forward **unchanged**, retaining their original timestamp, in keeping with the discipline's commitment not to revise registered predictions retroactively.
+>
+> **Revision 2.1 (November 2026)** corrects three sourcing errors in §3 and clarifies the resolution rule of Prediction 2. No claim, probability, or prediction is altered. The corrections are listed in §10.
 
 ---
 
@@ -32,7 +34,7 @@ The most proximate antecedent is the structural-demographic theory of Turchin an
 
 In the poliform language of Document 3, the United States is an instance of the **industrial nation-state** basin, and the sharp structural question this paper poses (§6) is whether the elevated stress of 2008–2024 is an *intra-basin* secular-cycle peak that will relax, or the early signature of a *between-basin* transition toward the algorithmic-surveillance basin. The paper does not resolve this question; it frames it and registers predictions that bear on it.
 
-The paper proceeds: §2 states the framework briefly; §3 presents the component-level stress trajectory and an illustrative CSI; §4 gives the retrospective interpretation as a set of falsifiable sub-hypotheses, with alternatives; §5 develops the Weimar comparison as hypothesis-generating analogy; §6 poses the poliform question; §7 registers five predictions; §8 states limitations; §9 concludes.
+The paper proceeds: §2 states the framework briefly; §3 presents the component-level stress trajectory and an illustrative CSI; §4 gives the retrospective interpretation as a set of falsifiable sub-hypotheses, with alternatives; §5 develops the Weimar comparison as hypothesis-generating analogy; §6 poses the poliform question; §7 registers five predictions; §8 states limitations; §9 concludes; §10 lists the corrections made in Revision 2.1.
 
 ## 2. Framework (in brief)
 
@@ -50,15 +52,15 @@ The full specification is in Documents 1, 2, and 4. The minimum needed here:
 
 The component-level figures below are largely **sourced reported statistics** (and should be verified against current provider data at submission); their normalization and aggregation into a CSI is **illustrative/estimated** pending Document 4's pipeline.
 
-**Economic stress.** Real wages for the bottom two quintiles were effectively flat from 1979 through approximately 2015 even as productivity rose (Mishel et al. 2015; EPI wage-productivity series). Top-1% net wealth share rose from roughly 23% (1980) toward roughly 38% (2020) per the Federal Reserve DFA, approaching late-1920s levels (Saez and Zucman 2020), corroborated by WID. Intergenerational mobility declined over the period (Chetty et al. 2014). *(Specific transition rates cited in the original — e.g., bottom-to-top-quintile probabilities — should be re-verified against the Opportunity Insights series before submission; they are not load-bearing for the trajectory.)*
+**Economic stress.** Real wages for the bottom two quintiles were effectively flat from 1979 through approximately 2015 even as productivity rose (Mishel et al. 2015; EPI wage-productivity series). The top 1% share of net wealth rose from roughly 23% around 1980 to the mid-to-upper 30s by the late 2010s on capitalized-income estimates (Saez and Zucman 2020; WID), approaching late-1920s levels. The Federal Reserve's Distributional Financial Accounts, which begin only in 1989 and use a different method, show a smaller rise in the same direction, from roughly 23% to roughly 32%. Absolute intergenerational mobility — the share of children out-earning their parents — fell from roughly 90% for the 1940 birth cohort to roughly 50% for the 1984 cohort (Chetty et al. 2017), while rank-based relative mobility was roughly stable (Chetty et al. 2014). *(Specific transition rates cited in the original — e.g., bottom-to-top-quintile probabilities — should be re-verified against the Opportunity Insights series before submission; they are not load-bearing for the trajectory.)*
 
-**Elite dynamics.** The Elite Overproduction Index (construction and caveats in Document 4 §6) rose materially over the period. Law-school first-year enrollment rose to a peak near 52,500 around 2010 (ABA) while lawyer-position growth lagged; PhD conferrals rose toward roughly 55,000/year by 2010 (NCES/SED) while tenure-track availability in the humanities and social sciences contracted after ~2008, widening the credential-position gap. Turchin (2016) identifies elite overproduction as among the most predictive instability variables in his historical set. *(EOI values are estimated pending the harmonized protocol of Document 4 §6, which must bridge the 2000/2010 occupational reclassifications.)*
+**Elite dynamics.** The Elite Overproduction Index (construction and caveats in Document 4 §6) rose materially over the period. Law-school first-year enrollment rose to a peak near 52,500 around 2010 (ABA) while lawyer-position growth lagged; research-doctorate conferrals rose from roughly 41,000 in 2000 to roughly 48,000 in 2010 and roughly 58,000 by 2023 (NCSES Survey of Earned Doctorates) while tenure-track availability in the humanities and social sciences contracted after ~2008, widening the credential-position gap. Turchin (2016) identifies elite overproduction as among the most predictive instability variables in his historical set. *(EOI values are estimated pending the harmonized protocol of Document 4 §6, which must bridge the 2000/2010 occupational reclassifications.)*
 
 **Legitimacy.** Gallup's institutional-confidence series shows mean confidence across consistently-tracked institutions falling from roughly 48% (mid-1970s) toward roughly 27% (2023); Congressional confidence specifically fell to single digits (~8%, 2023). Pew's parallel series shows accelerating partisan divergence in trust after ~2008.
 
 **Cohesion.** Population-weighted county partisan lean increased over the period (Bishop 2008; Chen and Rodden 2013), reducing routine cross-partisan contact; affective polarization rose and, per Iyengar et al. (2019), exceeds issue-based polarization and accelerated after ~2000.
 
-**Epistemic coherence.** This is the weakest-measured block (Document 4 §5). The Media Overlap Score, estimable with quality only from ~2012 and reconstructed earlier, declined over the period; the Factual Consensus Rate **has no instrument yet** and its pre-instrument values are not reported as data. The composite ECI is estimated to have moved from a functional into a degraded range over ~2012–2014, but this estimate rests on interpolation and is explicitly indicative, not measured.
+**Epistemic coherence.** This is the weakest-measured block (Document 4 §5). The Media Overlap Score, estimable with quality only from ~2012 and reconstructed earlier, declined over the period; the Factual Consensus Rate has an instrument specified (Document 9) but **not yet fielded**, and it will never have pre-instrument values. The composite ECI is estimated to have moved from a functional into a degraded range over ~2012–2014, but this estimate rests on interpolation and is explicitly indicative, not measured.
 
 **Demographic.** Youth-cohort and rural-urban divergence measures (Census ACS; ERS) contributed secondary, slower-moving pressure.
 
@@ -121,7 +123,7 @@ Two honest caveats sharpen this. First, the industrial nation-state is the *weak
 
 **Prediction 1 — P = 0.72.** At least one major-party presidential or vice-presidential nomination in the 2028 cycle goes to a candidate whose platform includes explicit institutional delegitimation of at least one co-equal branch of government. *Resolution (Nov 2028):* documented campaign statements of a nominated candidate explicitly calling for subordination, defunding, restructuring, or delegitimation of the judiciary, legislature, or executive *as an institution* (not mere policy disagreement with current officeholders). *Tests H1 and H2.*
 
-**Prediction 2 — P = 0.78.** The U.S. ECI, measured by the validated methodology of Document 4, shows continued decline from its 2024 level through 2028 absent a major intervention in platform incentive architecture. *Resolution (Dec 2028):* ECI(2028) < ECI(2024) under the standardized methodology. *Conditional on the ECI instrument being fielded; tests the information-layer mechanism.*
+**Prediction 2 — P = 0.78.** The U.S. ECI, measured by the validated methodology of Document 4, shows continued decline from its 2024 level through 2028 absent a major intervention in platform incentive architecture. *Resolution (Dec 2028):* ECI(2028) < ECI(2024) under the standardized methodology. *Conditional on the ECI instrument being fielded; tests the information-layer mechanism.* *Resolution clarified, November 2026 (claim and probability unchanged):* the comparison is like-for-like, on the ECI components that have a 2024 value — the MOS, and the NCI where data permit. The FCR cannot enter it, because its instrument did not exist in 2024 and it has no historical values (Document 9 §7). The condition is accordingly that the MOS pipeline of Document 4 §5.1 is computed for both years; if it is not, the prediction is void and is recorded as unresolved, not as correct.
 
 **Prediction 3 — P = 0.65.** At least three U.S. states experience significant fiscal-stress events (general-obligation credit downgrade, declared fiscal emergency, or failure to meet scheduled pension obligations) between 2026 and 2030. *Resolution (Dec 2030):* documented occurrence in ≥3 distinct states.
 
@@ -135,7 +137,7 @@ A note on reflexivity (Document 2 §8.1): publishing these predictions may influ
 
 **Estimated, not computed.** The principal limitation is the one stated throughout: the CSI here is illustrative. Converting it to a computed result requires Document 4's pipeline — the coverage-restricted baseline, the corrected χ²/Hotelling thresholds, the per-dimension-normalized headline, and uncertainty propagation. Until then, this paper is a structured argument with indicative magnitudes, not a measurement.
 
-**Epistemic-layer measurement.** The ECI is the weakest block: one component is reconstructed/estimated before ~2012, the other has no instrument yet. Prediction 2 is conditional on building it — and the instrument it requires (the FCR) is now specified and pre-registered in **Document 9**, so fielding it is what makes Prediction 2 live. This is the program's highest-priority empirical investment (Document 4 §5).
+**Epistemic-layer measurement.** The ECI is the weakest block: one component is reconstructed/estimated before ~2012, and another, the FCR, has an instrument specified (Document 9) but not yet fielded. Prediction 2 does not wait on the FCR, which has no 2024 value; it resolves on the MOS (§7). The FCR supplies a separate, shorter-window test of the same mechanism. Building both is the program's highest-priority empirical investment (Document 4 §5).
 
 **Baseline sensitivity.** All z-scores depend on the 1948–1973 baseline. Sensitivity analyses against 1948–1968 and 1950–1980 baselines are required; the original reported these as broadly shape-preserving but level-shifting by ~15–25%, indicating the trajectory is robust to the choice while specific thresholds are not.
 
@@ -153,9 +155,22 @@ The paper is careful about what it has and has not shown. The CSI values are ill
 
 ---
 
+## 10. Corrections in Revision 2.1 (November 2026)
+
+None of the following alters a claim, a probability, or a registered prediction.
+
+1. **Wealth concentration (§3).** Revision 2.0 attributed a rise in the top 1% wealth share "from roughly 23% (1980) toward roughly 38% (2020)" to the Federal Reserve's Distributional Financial Accounts. That series begins in 1989 and shows a smaller rise, from roughly 23% to roughly 32%. The figures quoted belong to the capitalized-income estimates of Saez and Zucman and of WID. Both series rise; the attribution is corrected and both are now given.
+2. **Mobility (§3).** Revision 2.0 cited Chetty et al. (2014) for a decline in intergenerational mobility. That study found rank-based relative mobility roughly stable. The decline is in *absolute* mobility, documented by Chetty et al. (2017). The direction of the stress contribution is unchanged; the measure and the citation are corrected, and Document 4 §3 now defines the mobility deficit on absolute mobility.
+3. **Doctorate conferrals (§3).** Revision 2.0 gave research-doctorate conferrals as "roughly 55,000/year by 2010." The Survey of Earned Doctorates records roughly 48,000 in 2010; the series reached 55,000 only in the mid-2010s. The rise is real but slower than stated. The survey is conducted by NCSES, not NCES.
+4. **Prediction 2 (§7, §8).** The resolution rule is clarified: the 2024-to-2028 comparison is made on the ECI components that have a 2024 value. The claim and its probability are unchanged.
+
+A reader holding Revision 2.0 should treat item 3 as weakening one piece of the elite-overproduction evidence at the margin, and items 1 and 2 as corrections of provenance that leave the trajectory claim where it was.
+
+---
+
 ## References
 
-American Bar Association (2023); Bishop, B. (2008); Bureau of Labor Statistics (2024, CES and OEWS); Chen, J., & Rodden, J. (2013); Chetty, R., Hendren, N., Kline, P., & Saez, E. (2014); Congressional Budget Office (2024); Dell, F., Piketty, T., & Saez, E. (2007); Evans, R. J. (2003); Federal Reserve Board (2024, DFA); Fritzsche, P. (1998); Gallup Organization (2023); International Monetary Fund (2023, HPDD); Iyengar, S., Lelkes, Y., Levendusky, M., Malhotra, N., & Westwood, S. J. (2019); James, H. (1986); Kahan, D. M. (2017); Kershaw, I. (1998); MIT Election Data and Science Lab (2023); Mishel, L., Gould, E., & Bivens, J. (2015); National Center for Education Statistics (2022); Norris, P., & Inglehart, R. (2019); Pennycook, G., & Rand, D. G. (2019); Peukert, D. J. K. (1989); Pew Research Center (2022, 2023); Piketty, T. (2014); Putnam, R. D. (2000); Reuters Institute (2023); Saez, E., & Zucman, G. (2020); Turchin, P. (2003, 2016); Turchin, P., & Nefedov, S. A. (2009); World Inequality Database (2024).
+American Bar Association (2023); Bishop, B. (2008); Bureau of Labor Statistics (2024, CES and OEWS); Chen, J., & Rodden, J. (2013); Chetty, R., Hendren, N., Kline, P., Saez, E., & Turner, N. (2014); Chetty, R., Grusky, D., Hell, M., Hendren, N., Manduca, R., & Narang, J. (2017); Congressional Budget Office (2024); Dell, F., Piketty, T., & Saez, E. (2007); Evans, R. J. (2003); Federal Reserve Board (2024, DFA); Fritzsche, P. (1998); Gallup Organization (2023); International Monetary Fund (2023, HPDD); Iyengar, S., Lelkes, Y., Levendusky, M., Malhotra, N., & Westwood, S. J. (2019); James, H. (1986); Kahan, D. M. (2017); Kershaw, I. (1998); MIT Election Data and Science Lab (2023); Mishel, L., Gould, E., & Bivens, J. (2015); National Center for Education Statistics (2022); National Center for Science and Engineering Statistics (2024, Survey of Earned Doctorates); Norris, P., & Inglehart, R. (2019); Pennycook, G., & Rand, D. G. (2019); Peukert, D. J. K. (1989); Pew Research Center (2022, 2023); Piketty, T. (2014); Putnam, R. D. (2000); Reuters Institute (2023); Saez, E., & Zucman, G. (2020); Turchin, P. (2003, 2016); Turchin, P., & Nefedov, S. A. (2009); World Inequality Database (2024).
 
 *Bullock, J. G., et al. (2015) and Prior, M., et al. (2015), on partisan expressive responding and incentivized-accuracy designs, are cited in support of the ECI/FCR methodology in **Document 9** (the FCR instrument specification and pre-registration).*
 
